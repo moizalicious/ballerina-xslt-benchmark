@@ -1,0 +1,3428 @@
+# JMH version: 1.19
+# VM version: JDK 1.8.0_131, VM 25.131-b11
+# VM invoker: /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/java
+# VM options: <none>
+# Warmup: 20 iterations, 1 s each
+# Measurement: 20 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: org.ballerina.test.SAXTransformer.transform
+
+# Run progress: 0.00% complete, ETA 00:20:00
+# Fork: 1 of 10
+# Warmup Iteration   1: Aug 28, 2017 2:49:48 PM org.apache.axiom.util.stax.dialect.StAXDialectDetector detectDialect
+WARNING: Unable to determine dialect of the StAX implementation at jar:file:/home/moiz/Desktop/java-projects/ballerina-xslt-benchmark/target/benchmarks.jar!/
+Warning: org.apache.axiom.om.impl.common.serializer.push.sax.XMLReaderImpl: http://javax.xml.XMLConstants/property/accessExternalDTD
+Warning: org.apache.axiom.om.impl.common.serializer.push.sax.XMLReaderImpl: http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit
+0.168 ops/ms
+# Warmup Iteration   2: 0.308 ops/ms
+# Warmup Iteration   3: 0.427 ops/ms
+# Warmup Iteration   4: 0.574 ops/ms
+# Warmup Iteration   5: 0.583 ops/ms
+# Warmup Iteration   6: 0.570 ops/ms
+# Warmup Iteration   7: 0.601 ops/ms
+# Warmup Iteration   8: 0.686 ops/ms
+# Warmup Iteration   9: 0.657 ops/ms
+# Warmup Iteration  10: 0.697 ops/ms
+# Warmup Iteration  11: 0.642 ops/ms
+# Warmup Iteration  12: 0.653 ops/ms
+# Warmup Iteration  13: 0.687 ops/ms
+# Warmup Iteration  14: 0.785 ops/ms
+# Warmup Iteration  15: 0.745 ops/ms
+# Warmup Iteration  16: 0.798 ops/ms
+# Warmup Iteration  17: 0.834 ops/ms
+# Warmup Iteration  18: 0.776 ops/ms
+# Warmup Iteration  19: 0.759 ops/ms
+# Warmup Iteration  20: 0.773 ops/ms
+Iteration   1: 0.826 ops/ms
+Iteration   2: 0.845 ops/ms
+Iteration   3: 0.824 ops/ms
+Iteration   4: 0.795 ops/ms
+Iteration   5: 0.778 ops/ms
+Iteration   6: 0.776 ops/ms
+Iteration   7: 0.863 ops/ms
+Iteration   8: 0.835 ops/ms
+Iteration   9: 0.812 ops/ms
+Iteration  10: 0.771 ops/ms
+Iteration  11: 0.750 ops/ms
+Iteration  12: 0.768 ops/ms
+Iteration  13: 0.869 ops/ms
+Iteration  14: 0.837 ops/ms
+Iteration  15: 0.812 ops/ms
+Iteration  16: 0.773 ops/ms
+Iteration  17: 0.752 ops/ms
+Iteration  18: 0.741 ops/ms
+Iteration  19: 0.878 ops/ms
+Iteration  20: 0.852 ops/ms
+
+# Run progress: 3.33% complete, ETA 00:19:37
+# Fork: 2 of 10
+# Warmup Iteration   1: Aug 28, 2017 2:50:29 PM org.apache.axiom.util.stax.dialect.StAXDialectDetector detectDialect
+WARNING: Unable to determine dialect of the StAX implementation at jar:file:/home/moiz/Desktop/java-projects/ballerina-xslt-benchmark/target/benchmarks.jar!/
+Warning: org.apache.axiom.om.impl.common.serializer.push.sax.XMLReaderImpl: http://javax.xml.XMLConstants/property/accessExternalDTD
+Warning: org.apache.axiom.om.impl.common.serializer.push.sax.XMLReaderImpl: http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit
+0.179 ops/ms
+# Warmup Iteration   2: 0.326 ops/ms
+# Warmup Iteration   3: 0.443 ops/ms
+# Warmup Iteration   4: 0.591 ops/ms
+# Warmup Iteration   5: 0.532 ops/ms
+# Warmup Iteration   6: 0.622 ops/ms
+# Warmup Iteration   7: 0.731 ops/ms
+# Warmup Iteration   8: 0.680 ops/ms
+# Warmup Iteration   9: 0.696 ops/ms
+# Warmup Iteration  10: 0.680 ops/ms
+# Warmup Iteration  11: 0.738 ops/ms
+# Warmup Iteration  12: 0.744 ops/ms
+# Warmup Iteration  13: 0.709 ops/ms
+# Warmup Iteration  14: 0.722 ops/ms
+# Warmup Iteration  15: 0.708 ops/ms
+# Warmup Iteration  16: 0.859 ops/ms
+# Warmup Iteration  17: 0.797 ops/ms
+# Warmup Iteration  18: 0.804 ops/ms
+# Warmup Iteration  19: 0.766 ops/ms
+# Warmup Iteration  20: 0.815 ops/ms
+Iteration   1: 0.862 ops/ms
+Iteration   2: 0.835 ops/ms
+Iteration   3: 0.807 ops/ms
+Iteration   4: 0.773 ops/ms
+Iteration   5: 0.880 ops/ms
+Iteration   6: 0.848 ops/ms
+Iteration   7: 0.817 ops/ms
+Iteration   8: 0.786 ops/ms
+Iteration   9: 0.736 ops/ms
+Iteration  10: 0.895 ops/ms
+Iteration  11: 0.849 ops/ms
+Iteration  12: 0.822 ops/ms
+Iteration  13: 0.794 ops/ms
+Iteration  14: 0.761 ops/ms
+Iteration  15: 0.828 ops/ms
+Iteration  16: 0.857 ops/ms
+Iteration  17: 0.823 ops/ms
+Iteration  18: 0.803 ops/ms
+Iteration  19: 0.783 ops/ms
+Iteration  20: 0.771 ops/ms
+
+# Run progress: 6.67% complete, ETA 00:18:55
+# Fork: 3 of 10
+# Warmup Iteration   1: Aug 28, 2017 2:51:09 PM org.apache.axiom.util.stax.dialect.StAXDialectDetector detectDialect
+WARNING: Unable to determine dialect of the StAX implementation at jar:file:/home/moiz/Desktop/java-projects/ballerina-xslt-benchmark/target/benchmarks.jar!/
+Warning: org.apache.axiom.om.impl.common.serializer.push.sax.XMLReaderImpl: http://javax.xml.XMLConstants/property/accessExternalDTD
+Warning: org.apache.axiom.om.impl.common.serializer.push.sax.XMLReaderImpl: http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit
+0.174 ops/ms
+# Warmup Iteration   2: 0.333 ops/ms
+# Warmup Iteration   3: 0.396 ops/ms
+# Warmup Iteration   4: 0.610 ops/ms
+# Warmup Iteration   5: 0.531 ops/ms
+# Warmup Iteration   6: 0.560 ops/ms
+# Warmup Iteration   7: 0.597 ops/ms
+# Warmup Iteration   8: 0.693 ops/ms
+# Warmup Iteration   9: 0.640 ops/ms
+# Warmup Iteration  10: 0.693 ops/ms
+# Warmup Iteration  11: 0.664 ops/ms
+# Warmup Iteration  12: 0.783 ops/ms
+# Warmup Iteration  13: 0.663 ops/ms
+# Warmup Iteration  14: 0.732 ops/ms
+# Warmup Iteration  15: 0.734 ops/ms
+# Warmup Iteration  16: 0.796 ops/ms
+# Warmup Iteration  17: 0.820 ops/ms
+# Warmup Iteration  18: 0.763 ops/ms
+# Warmup Iteration  19: 0.766 ops/ms
+# Warmup Iteration  20: 0.760 ops/ms
+Iteration   1: 0.815 ops/ms
+Iteration   2: 0.845 ops/ms
+Iteration   3: 0.814 ops/ms
+Iteration   4: 0.788 ops/ms
+Iteration   5: 0.769 ops/ms
+Iteration   6: 0.831 ops/ms
+Iteration   7: 0.848 ops/ms
+Iteration   8: 0.802 ops/ms
+Iteration   9: 0.787 ops/ms
+Iteration  10: 0.760 ops/ms
+Iteration  11: 0.780 ops/ms
+Iteration  12: 0.863 ops/ms
+Iteration  13: 0.831 ops/ms
+Iteration  14: 0.807 ops/ms
+Iteration  15: 0.765 ops/ms
+Iteration  16: 0.723 ops/ms
+Iteration  17: 0.878 ops/ms
+Iteration  18: 0.843 ops/ms
+Iteration  19: 0.813 ops/ms
+Iteration  20: 0.778 ops/ms
+
+# Run progress: 10.00% complete, ETA 00:18:14
+# Fork: 4 of 10
+# Warmup Iteration   1: Aug 28, 2017 2:51:50 PM org.apache.axiom.util.stax.dialect.StAXDialectDetector detectDialect
+WARNING: Unable to determine dialect of the StAX implementation at jar:file:/home/moiz/Desktop/java-projects/ballerina-xslt-benchmark/target/benchmarks.jar!/
+Warning: org.apache.axiom.om.impl.common.serializer.push.sax.XMLReaderImpl: http://javax.xml.XMLConstants/property/accessExternalDTD
+Warning: org.apache.axiom.om.impl.common.serializer.push.sax.XMLReaderImpl: http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit
+0.177 ops/ms
+# Warmup Iteration   2: 0.314 ops/ms
+# Warmup Iteration   3: 0.422 ops/ms
+# Warmup Iteration   4: 0.597 ops/ms
+# Warmup Iteration   5: 0.500 ops/ms
+# Warmup Iteration   6: 0.635 ops/ms
+# Warmup Iteration   7: 0.698 ops/ms
+# Warmup Iteration   8: 0.670 ops/ms
+# Warmup Iteration   9: 0.696 ops/ms
+# Warmup Iteration  10: 0.687 ops/ms
+# Warmup Iteration  11: 0.679 ops/ms
+# Warmup Iteration  12: 0.660 ops/ms
+# Warmup Iteration  13: 0.807 ops/ms
+# Warmup Iteration  14: 0.771 ops/ms
+# Warmup Iteration  15: 0.731 ops/ms
+# Warmup Iteration  16: 0.837 ops/ms
+# Warmup Iteration  17: 0.836 ops/ms
+# Warmup Iteration  18: 0.768 ops/ms
+# Warmup Iteration  19: 0.775 ops/ms
+# Warmup Iteration  20: 0.815 ops/ms
+Iteration   1: 0.863 ops/ms
+Iteration   2: 0.829 ops/ms
+Iteration   3: 0.798 ops/ms
+Iteration   4: 0.753 ops/ms
+Iteration   5: 0.774 ops/ms
+Iteration   6: 0.840 ops/ms
+Iteration   7: 0.811 ops/ms
+Iteration   8: 0.783 ops/ms
+Iteration   9: 0.759 ops/ms
+Iteration  10: 0.730 ops/ms
+Iteration  11: 0.763 ops/ms
+Iteration  12: 0.873 ops/ms
+Iteration  13: 0.841 ops/ms
+Iteration  14: 0.812 ops/ms
+Iteration  15: 0.774 ops/ms
+Iteration  16: 0.746 ops/ms
+Iteration  17: 0.755 ops/ms
+Iteration  18: 0.881 ops/ms
+Iteration  19: 0.849 ops/ms
+Iteration  20: 0.818 ops/ms
+
+# Run progress: 13.33% complete, ETA 00:17:33
+# Fork: 5 of 10
+# Warmup Iteration   1: Aug 28, 2017 2:52:30 PM org.apache.axiom.util.stax.dialect.StAXDialectDetector detectDialect
+WARNING: Unable to determine dialect of the StAX implementation at jar:file:/home/moiz/Desktop/java-projects/ballerina-xslt-benchmark/target/benchmarks.jar!/
+Warning: org.apache.axiom.om.impl.common.serializer.push.sax.XMLReaderImpl: http://javax.xml.XMLConstants/property/accessExternalDTD
+Warning: org.apache.axiom.om.impl.common.serializer.push.sax.XMLReaderImpl: http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit
+0.167 ops/ms
+# Warmup Iteration   2: 0.317 ops/ms
+# Warmup Iteration   3: 0.442 ops/ms
+# Warmup Iteration   4: 0.570 ops/ms
+# Warmup Iteration   5: 0.568 ops/ms
+# Warmup Iteration   6: 0.621 ops/ms
+# Warmup Iteration   7: 0.655 ops/ms
+# Warmup Iteration   8: 0.715 ops/ms
+# Warmup Iteration   9: 0.665 ops/ms
+# Warmup Iteration  10: 0.669 ops/ms
+# Warmup Iteration  11: 0.724 ops/ms
+# Warmup Iteration  12: 0.744 ops/ms
+# Warmup Iteration  13: 0.656 ops/ms
+# Warmup Iteration  14: 0.716 ops/ms
+# Warmup Iteration  15: 0.731 ops/ms
+# Warmup Iteration  16: 0.819 ops/ms
+# Warmup Iteration  17: 0.822 ops/ms
+# Warmup Iteration  18: 0.776 ops/ms
+# Warmup Iteration  19: 0.762 ops/ms
+# Warmup Iteration  20: 0.790 ops/ms
+Iteration   1: 0.863 ops/ms
+Iteration   2: 0.823 ops/ms
+Iteration   3: 0.806 ops/ms
+Iteration   4: 0.775 ops/ms
+Iteration   5: 0.776 ops/ms
+Iteration   6: 0.875 ops/ms
+Iteration   7: 0.839 ops/ms
+Iteration   8: 0.817 ops/ms
+Iteration   9: 0.778 ops/ms
+Iteration  10: 0.749 ops/ms
+Iteration  11: 0.780 ops/ms
+Iteration  12: 0.869 ops/ms
+Iteration  13: 0.836 ops/ms
+Iteration  14: 0.813 ops/ms
+Iteration  15: 0.778 ops/ms
+Iteration  16: 0.754 ops/ms
+Iteration  17: 0.757 ops/ms
+Iteration  18: 0.875 ops/ms
+Iteration  19: 0.843 ops/ms
+Iteration  20: 0.791 ops/ms
+
+# Run progress: 16.67% complete, ETA 00:16:53
+# Fork: 6 of 10
+# Warmup Iteration   1: Aug 28, 2017 2:53:11 PM org.apache.axiom.util.stax.dialect.StAXDialectDetector detectDialect
+WARNING: Unable to determine dialect of the StAX implementation at jar:file:/home/moiz/Desktop/java-projects/ballerina-xslt-benchmark/target/benchmarks.jar!/
+Warning: org.apache.axiom.om.impl.common.serializer.push.sax.XMLReaderImpl: http://javax.xml.XMLConstants/property/accessExternalDTD
+Warning: org.apache.axiom.om.impl.common.serializer.push.sax.XMLReaderImpl: http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit
+0.167 ops/ms
+# Warmup Iteration   2: 0.319 ops/ms
+# Warmup Iteration   3: 0.411 ops/ms
+# Warmup Iteration   4: 0.602 ops/ms
+# Warmup Iteration   5: 0.555 ops/ms
+# Warmup Iteration   6: 0.602 ops/ms
+# Warmup Iteration   7: 0.657 ops/ms
+# Warmup Iteration   8: 0.701 ops/ms
+# Warmup Iteration   9: 0.707 ops/ms
+# Warmup Iteration  10: 0.679 ops/ms
+# Warmup Iteration  11: 0.657 ops/ms
+# Warmup Iteration  12: 0.626 ops/ms
+# Warmup Iteration  13: 0.797 ops/ms
+# Warmup Iteration  14: 0.784 ops/ms
+# Warmup Iteration  15: 0.730 ops/ms
+# Warmup Iteration  16: 0.821 ops/ms
+# Warmup Iteration  17: 0.825 ops/ms
+# Warmup Iteration  18: 0.776 ops/ms
+# Warmup Iteration  19: 0.769 ops/ms
+# Warmup Iteration  20: 0.802 ops/ms
+Iteration   1: 0.860 ops/ms
+Iteration   2: 0.829 ops/ms
+Iteration   3: 0.811 ops/ms
+Iteration   4: 0.781 ops/ms
+Iteration   5: 0.859 ops/ms
+Iteration   6: 0.857 ops/ms
+Iteration   7: 0.819 ops/ms
+Iteration   8: 0.792 ops/ms
+Iteration   9: 0.767 ops/ms
+Iteration  10: 0.833 ops/ms
+Iteration  11: 0.860 ops/ms
+Iteration  12: 0.832 ops/ms
+Iteration  13: 0.801 ops/ms
+Iteration  14: 0.780 ops/ms
+Iteration  15: 0.792 ops/ms
+Iteration  16: 0.870 ops/ms
+Iteration  17: 0.832 ops/ms
+Iteration  18: 0.810 ops/ms
+Iteration  19: 0.776 ops/ms
+Iteration  20: 0.736 ops/ms
+
+# Run progress: 20.00% complete, ETA 00:16:12
+# Fork: 7 of 10
+# Warmup Iteration   1: Aug 28, 2017 2:53:51 PM org.apache.axiom.util.stax.dialect.StAXDialectDetector detectDialect
+WARNING: Unable to determine dialect of the StAX implementation at jar:file:/home/moiz/Desktop/java-projects/ballerina-xslt-benchmark/target/benchmarks.jar!/
+Warning: org.apache.axiom.om.impl.common.serializer.push.sax.XMLReaderImpl: http://javax.xml.XMLConstants/property/accessExternalDTD
+Warning: org.apache.axiom.om.impl.common.serializer.push.sax.XMLReaderImpl: http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit
+0.185 ops/ms
+# Warmup Iteration   2: 0.323 ops/ms
+# Warmup Iteration   3: 0.411 ops/ms
+# Warmup Iteration   4: 0.563 ops/ms
+# Warmup Iteration   5: 0.523 ops/ms
+# Warmup Iteration   6: 0.656 ops/ms
+# Warmup Iteration   7: 0.714 ops/ms
+# Warmup Iteration   8: 0.666 ops/ms
+# Warmup Iteration   9: 0.694 ops/ms
+# Warmup Iteration  10: 0.677 ops/ms
+# Warmup Iteration  11: 0.676 ops/ms
+# Warmup Iteration  12: 0.640 ops/ms
+# Warmup Iteration  13: 0.786 ops/ms
+# Warmup Iteration  14: 0.767 ops/ms
+# Warmup Iteration  15: 0.748 ops/ms
+# Warmup Iteration  16: 0.806 ops/ms
+# Warmup Iteration  17: 0.827 ops/ms
+# Warmup Iteration  18: 0.753 ops/ms
+# Warmup Iteration  19: 0.778 ops/ms
+# Warmup Iteration  20: 0.804 ops/ms
+Iteration   1: 0.857 ops/ms
+Iteration   2: 0.829 ops/ms
+Iteration   3: 0.793 ops/ms
+Iteration   4: 0.759 ops/ms
+Iteration   5: 0.753 ops/ms
+Iteration   6: 0.865 ops/ms
+Iteration   7: 0.838 ops/ms
+Iteration   8: 0.802 ops/ms
+Iteration   9: 0.772 ops/ms
+Iteration  10: 0.748 ops/ms
+Iteration  11: 0.766 ops/ms
+Iteration  12: 0.871 ops/ms
+Iteration  13: 0.841 ops/ms
+Iteration  14: 0.808 ops/ms
+Iteration  15: 0.771 ops/ms
+Iteration  16: 0.749 ops/ms
+Iteration  17: 0.740 ops/ms
+Iteration  18: 0.877 ops/ms
+Iteration  19: 0.846 ops/ms
+Iteration  20: 0.804 ops/ms
+
+# Run progress: 23.33% complete, ETA 00:15:31
+# Fork: 8 of 10
+# Warmup Iteration   1: Aug 28, 2017 2:54:32 PM org.apache.axiom.util.stax.dialect.StAXDialectDetector detectDialect
+WARNING: Unable to determine dialect of the StAX implementation at jar:file:/home/moiz/Desktop/java-projects/ballerina-xslt-benchmark/target/benchmarks.jar!/
+Warning: org.apache.axiom.om.impl.common.serializer.push.sax.XMLReaderImpl: http://javax.xml.XMLConstants/property/accessExternalDTD
+Warning: org.apache.axiom.om.impl.common.serializer.push.sax.XMLReaderImpl: http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit
+0.186 ops/ms
+# Warmup Iteration   2: 0.324 ops/ms
+# Warmup Iteration   3: 0.463 ops/ms
+# Warmup Iteration   4: 0.604 ops/ms
+# Warmup Iteration   5: 0.502 ops/ms
+# Warmup Iteration   6: 0.518 ops/ms
+# Warmup Iteration   7: 0.650 ops/ms
+# Warmup Iteration   8: 0.649 ops/ms
+# Warmup Iteration   9: 0.683 ops/ms
+# Warmup Iteration  10: 0.703 ops/ms
+# Warmup Iteration  11: 0.618 ops/ms
+# Warmup Iteration  12: 0.668 ops/ms
+# Warmup Iteration  13: 0.731 ops/ms
+# Warmup Iteration  14: 0.785 ops/ms
+# Warmup Iteration  15: 0.741 ops/ms
+# Warmup Iteration  16: 0.782 ops/ms
+# Warmup Iteration  17: 0.835 ops/ms
+# Warmup Iteration  18: 0.773 ops/ms
+# Warmup Iteration  19: 0.789 ops/ms
+# Warmup Iteration  20: 0.768 ops/ms
+Iteration   1: 0.834 ops/ms
+Iteration   2: 0.835 ops/ms
+Iteration   3: 0.824 ops/ms
+Iteration   4: 0.797 ops/ms
+Iteration   5: 0.770 ops/ms
+Iteration   6: 0.851 ops/ms
+Iteration   7: 0.854 ops/ms
+Iteration   8: 0.819 ops/ms
+Iteration   9: 0.800 ops/ms
+Iteration  10: 0.765 ops/ms
+Iteration  11: 0.818 ops/ms
+Iteration  12: 0.864 ops/ms
+Iteration  13: 0.827 ops/ms
+Iteration  14: 0.802 ops/ms
+Iteration  15: 0.777 ops/ms
+Iteration  16: 0.765 ops/ms
+Iteration  17: 0.873 ops/ms
+Iteration  18: 0.839 ops/ms
+Iteration  19: 0.818 ops/ms
+Iteration  20: 0.782 ops/ms
+
+# Run progress: 26.67% complete, ETA 00:14:51
+# Fork: 9 of 10
+# Warmup Iteration   1: Aug 28, 2017 2:55:12 PM org.apache.axiom.util.stax.dialect.StAXDialectDetector detectDialect
+WARNING: Unable to determine dialect of the StAX implementation at jar:file:/home/moiz/Desktop/java-projects/ballerina-xslt-benchmark/target/benchmarks.jar!/
+Warning: org.apache.axiom.om.impl.common.serializer.push.sax.XMLReaderImpl: http://javax.xml.XMLConstants/property/accessExternalDTD
+Warning: org.apache.axiom.om.impl.common.serializer.push.sax.XMLReaderImpl: http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit
+0.187 ops/ms
+# Warmup Iteration   2: 0.339 ops/ms
+# Warmup Iteration   3: 0.445 ops/ms
+# Warmup Iteration   4: 0.602 ops/ms
+# Warmup Iteration   5: 0.573 ops/ms
+# Warmup Iteration   6: 0.471 ops/ms
+# Warmup Iteration   7: 0.621 ops/ms
+# Warmup Iteration   8: 0.658 ops/ms
+# Warmup Iteration   9: 0.704 ops/ms
+# Warmup Iteration  10: 0.715 ops/ms
+# Warmup Iteration  11: 0.653 ops/ms
+# Warmup Iteration  12: 0.669 ops/ms
+# Warmup Iteration  13: 0.747 ops/ms
+# Warmup Iteration  14: 0.788 ops/ms
+# Warmup Iteration  15: 0.749 ops/ms
+# Warmup Iteration  16: 0.819 ops/ms
+# Warmup Iteration  17: 0.842 ops/ms
+# Warmup Iteration  18: 0.783 ops/ms
+# Warmup Iteration  19: 0.783 ops/ms
+# Warmup Iteration  20: 0.810 ops/ms
+Iteration   1: 0.861 ops/ms
+Iteration   2: 0.840 ops/ms
+Iteration   3: 0.814 ops/ms
+Iteration   4: 0.785 ops/ms
+Iteration   5: 0.797 ops/ms
+Iteration   6: 0.874 ops/ms
+Iteration   7: 0.843 ops/ms
+Iteration   8: 0.817 ops/ms
+Iteration   9: 0.781 ops/ms
+Iteration  10: 0.757 ops/ms
+Iteration  11: 0.801 ops/ms
+Iteration  12: 0.877 ops/ms
+Iteration  13: 0.842 ops/ms
+Iteration  14: 0.812 ops/ms
+Iteration  15: 0.789 ops/ms
+Iteration  16: 0.754 ops/ms
+Iteration  17: 0.790 ops/ms
+Iteration  18: 0.879 ops/ms
+Iteration  19: 0.844 ops/ms
+Iteration  20: 0.811 ops/ms
+
+# Run progress: 30.00% complete, ETA 00:14:10
+# Fork: 10 of 10
+# Warmup Iteration   1: Aug 28, 2017 2:55:53 PM org.apache.axiom.util.stax.dialect.StAXDialectDetector detectDialect
+WARNING: Unable to determine dialect of the StAX implementation at jar:file:/home/moiz/Desktop/java-projects/ballerina-xslt-benchmark/target/benchmarks.jar!/
+Warning: org.apache.axiom.om.impl.common.serializer.push.sax.XMLReaderImpl: http://javax.xml.XMLConstants/property/accessExternalDTD
+Warning: org.apache.axiom.om.impl.common.serializer.push.sax.XMLReaderImpl: http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit
+0.186 ops/ms
+# Warmup Iteration   2: 0.324 ops/ms
+# Warmup Iteration   3: 0.436 ops/ms
+# Warmup Iteration   4: 0.594 ops/ms
+# Warmup Iteration   5: 0.561 ops/ms
+# Warmup Iteration   6: 0.466 ops/ms
+# Warmup Iteration   7: 0.604 ops/ms
+# Warmup Iteration   8: 0.657 ops/ms
+# Warmup Iteration   9: 0.696 ops/ms
+# Warmup Iteration  10: 0.701 ops/ms
+# Warmup Iteration  11: 0.658 ops/ms
+# Warmup Iteration  12: 0.797 ops/ms
+# Warmup Iteration  13: 0.755 ops/ms
+# Warmup Iteration  14: 0.701 ops/ms
+# Warmup Iteration  15: 0.650 ops/ms
+# Warmup Iteration  16: 0.784 ops/ms
+# Warmup Iteration  17: 0.832 ops/ms
+# Warmup Iteration  18: 0.789 ops/ms
+# Warmup Iteration  19: 0.782 ops/ms
+# Warmup Iteration  20: 0.772 ops/ms
+Iteration   1: 0.829 ops/ms
+Iteration   2: 0.847 ops/ms
+Iteration   3: 0.828 ops/ms
+Iteration   4: 0.802 ops/ms
+Iteration   5: 0.775 ops/ms
+Iteration   6: 0.783 ops/ms
+Iteration   7: 0.872 ops/ms
+Iteration   8: 0.840 ops/ms
+Iteration   9: 0.813 ops/ms
+Iteration  10: 0.777 ops/ms
+Iteration  11: 0.754 ops/ms
+Iteration  12: 0.772 ops/ms
+Iteration  13: 0.873 ops/ms
+Iteration  14: 0.842 ops/ms
+Iteration  15: 0.812 ops/ms
+Iteration  16: 0.777 ops/ms
+Iteration  17: 0.750 ops/ms
+Iteration  18: 0.722 ops/ms
+Iteration  19: 0.863 ops/ms
+Iteration  20: 0.847 ops/ms
+
+
+Result "org.ballerina.test.SAXTransformer.transform":
+  0.811 ±(99.9%) 0.010 ops/ms [Average]
+  (min, avg, max) = (0.722, 0.811, 0.895), stdev = 0.040
+  CI (99.9%): [0.801, 0.820] (assumes normal distribution)
+
+
+# JMH version: 1.19
+# VM version: JDK 1.8.0_131, VM 25.131-b11
+# VM invoker: /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/java
+# VM options: <none>
+# Warmup: 20 iterations, 1 s each
+# Measurement: 20 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: org.ballerina.test.SAXTransformer.transform
+
+# Run progress: 33.33% complete, ETA 00:13:30
+# Fork: 1 of 10
+# Warmup Iteration   1: Aug 28, 2017 2:56:33 PM org.apache.axiom.util.stax.dialect.StAXDialectDetector detectDialect
+WARNING: Unable to determine dialect of the StAX implementation at jar:file:/home/moiz/Desktop/java-projects/ballerina-xslt-benchmark/target/benchmarks.jar!/
+Warning: org.apache.axiom.om.impl.common.serializer.push.sax.XMLReaderImpl: http://javax.xml.XMLConstants/property/accessExternalDTD
+Warning: org.apache.axiom.om.impl.common.serializer.push.sax.XMLReaderImpl: http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit
+5.575 ms/op
+# Warmup Iteration   2: 3.023 ms/op
+# Warmup Iteration   3: 2.355 ms/op
+# Warmup Iteration   4: 1.690 ms/op
+# Warmup Iteration   5: 1.732 ms/op
+# Warmup Iteration   6: 1.752 ms/op
+# Warmup Iteration   7: 1.431 ms/op
+# Warmup Iteration   8: 1.561 ms/op
+# Warmup Iteration   9: 1.425 ms/op
+# Warmup Iteration  10: 1.499 ms/op
+# Warmup Iteration  11: 1.529 ms/op
+# Warmup Iteration  12: 1.474 ms/op
+# Warmup Iteration  13: 1.332 ms/op
+# Warmup Iteration  14: 1.275 ms/op
+# Warmup Iteration  15: 1.342 ms/op
+# Warmup Iteration  16: 1.190 ms/op
+# Warmup Iteration  17: 1.225 ms/op
+# Warmup Iteration  18: 1.242 ms/op
+# Warmup Iteration  19: 1.277 ms/op
+# Warmup Iteration  20: 1.214 ms/op
+Iteration   1: 1.153 ms/op
+Iteration   2: 1.208 ms/op
+Iteration   3: 1.267 ms/op
+Iteration   4: 1.357 ms/op
+Iteration   5: 1.154 ms/op
+Iteration   6: 1.195 ms/op
+Iteration   7: 1.265 ms/op
+Iteration   8: 1.309 ms/op
+Iteration   9: 1.338 ms/op
+Iteration  10: 1.266 ms/op
+Iteration  11: 1.180 ms/op
+Iteration  12: 1.233 ms/op
+Iteration  13: 1.261 ms/op
+Iteration  14: 1.322 ms/op
+Iteration  15: 1.373 ms/op
+Iteration  16: 1.181 ms/op
+Iteration  17: 1.191 ms/op
+Iteration  18: 1.247 ms/op
+Iteration  19: 1.311 ms/op
+Iteration  20: 1.364 ms/op
+
+# Run progress: 36.67% complete, ETA 00:12:49
+# Fork: 2 of 10
+# Warmup Iteration   1: Aug 28, 2017 2:57:14 PM org.apache.axiom.util.stax.dialect.StAXDialectDetector detectDialect
+WARNING: Unable to determine dialect of the StAX implementation at jar:file:/home/moiz/Desktop/java-projects/ballerina-xslt-benchmark/target/benchmarks.jar!/
+Warning: org.apache.axiom.om.impl.common.serializer.push.sax.XMLReaderImpl: http://javax.xml.XMLConstants/property/accessExternalDTD
+Warning: org.apache.axiom.om.impl.common.serializer.push.sax.XMLReaderImpl: http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit
+5.726 ms/op
+# Warmup Iteration   2: 2.979 ms/op
+# Warmup Iteration   3: 2.325 ms/op
+# Warmup Iteration   4: 1.665 ms/op
+# Warmup Iteration   5: 1.977 ms/op
+# Warmup Iteration   6: 1.569 ms/op
+# Warmup Iteration   7: 1.415 ms/op
+# Warmup Iteration   8: 1.509 ms/op
+# Warmup Iteration   9: 1.455 ms/op
+# Warmup Iteration  10: 1.468 ms/op
+# Warmup Iteration  11: 1.406 ms/op
+# Warmup Iteration  12: 1.327 ms/op
+# Warmup Iteration  13: 1.446 ms/op
+# Warmup Iteration  14: 1.340 ms/op
+# Warmup Iteration  15: 1.359 ms/op
+# Warmup Iteration  16: 1.219 ms/op
+# Warmup Iteration  17: 1.206 ms/op
+# Warmup Iteration  18: 1.275 ms/op
+# Warmup Iteration  19: 1.293 ms/op
+# Warmup Iteration  20: 1.217 ms/op
+Iteration   1: 1.153 ms/op
+Iteration   2: 1.216 ms/op
+Iteration   3: 1.247 ms/op
+Iteration   4: 1.288 ms/op
+Iteration   5: 1.243 ms/op
+Iteration   6: 1.172 ms/op
+Iteration   7: 1.202 ms/op
+Iteration   8: 1.254 ms/op
+Iteration   9: 1.294 ms/op
+Iteration  10: 1.360 ms/op
+Iteration  11: 1.253 ms/op
+Iteration  12: 1.152 ms/op
+Iteration  13: 1.198 ms/op
+Iteration  14: 1.236 ms/op
+Iteration  15: 1.289 ms/op
+Iteration  16: 1.340 ms/op
+Iteration  17: 1.264 ms/op
+Iteration  18: 1.146 ms/op
+Iteration  19: 1.190 ms/op
+Iteration  20: 1.231 ms/op
+
+# Run progress: 40.00% complete, ETA 00:12:09
+# Fork: 3 of 10
+# Warmup Iteration   1: Aug 28, 2017 2:57:54 PM org.apache.axiom.util.stax.dialect.StAXDialectDetector detectDialect
+WARNING: Unable to determine dialect of the StAX implementation at jar:file:/home/moiz/Desktop/java-projects/ballerina-xslt-benchmark/target/benchmarks.jar!/
+Warning: org.apache.axiom.om.impl.common.serializer.push.sax.XMLReaderImpl: http://javax.xml.XMLConstants/property/accessExternalDTD
+Warning: org.apache.axiom.om.impl.common.serializer.push.sax.XMLReaderImpl: http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit
+5.626 ms/op
+# Warmup Iteration   2: 3.043 ms/op
+# Warmup Iteration   3: 2.564 ms/op
+# Warmup Iteration   4: 1.705 ms/op
+# Warmup Iteration   5: 1.741 ms/op
+# Warmup Iteration   6: 1.607 ms/op
+# Warmup Iteration   7: 1.442 ms/op
+# Warmup Iteration   8: 1.496 ms/op
+# Warmup Iteration   9: 1.507 ms/op
+# Warmup Iteration  10: 1.491 ms/op
+# Warmup Iteration  11: 1.641 ms/op
+# Warmup Iteration  12: 1.472 ms/op
+# Warmup Iteration  13: 1.313 ms/op
+# Warmup Iteration  14: 1.334 ms/op
+# Warmup Iteration  15: 1.392 ms/op
+# Warmup Iteration  16: 1.257 ms/op
+# Warmup Iteration  17: 1.244 ms/op
+# Warmup Iteration  18: 1.238 ms/op
+# Warmup Iteration  19: 1.278 ms/op
+# Warmup Iteration  20: 1.277 ms/op
+Iteration   1: 1.166 ms/op
+Iteration   2: 1.206 ms/op
+Iteration   3: 1.246 ms/op
+Iteration   4: 1.284 ms/op
+Iteration   5: 1.206 ms/op
+Iteration   6: 1.163 ms/op
+Iteration   7: 1.222 ms/op
+Iteration   8: 1.263 ms/op
+Iteration   9: 1.319 ms/op
+Iteration  10: 1.265 ms/op
+Iteration  11: 1.166 ms/op
+Iteration  12: 1.205 ms/op
+Iteration  13: 1.247 ms/op
+Iteration  14: 1.301 ms/op
+Iteration  15: 1.379 ms/op
+Iteration  16: 1.174 ms/op
+Iteration  17: 1.203 ms/op
+Iteration  18: 1.225 ms/op
+Iteration  19: 1.283 ms/op
+Iteration  20: 1.325 ms/op
+
+# Run progress: 43.33% complete, ETA 00:11:28
+# Fork: 4 of 10
+# Warmup Iteration   1: Aug 28, 2017 2:58:35 PM org.apache.axiom.util.stax.dialect.StAXDialectDetector detectDialect
+WARNING: Unable to determine dialect of the StAX implementation at jar:file:/home/moiz/Desktop/java-projects/ballerina-xslt-benchmark/target/benchmarks.jar!/
+Warning: org.apache.axiom.om.impl.common.serializer.push.sax.XMLReaderImpl: http://javax.xml.XMLConstants/property/accessExternalDTD
+Warning: org.apache.axiom.om.impl.common.serializer.push.sax.XMLReaderImpl: http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit
+5.952 ms/op
+# Warmup Iteration   2: 3.013 ms/op
+# Warmup Iteration   3: 2.502 ms/op
+# Warmup Iteration   4: 1.679 ms/op
+# Warmup Iteration   5: 1.719 ms/op
+# Warmup Iteration   6: 1.638 ms/op
+# Warmup Iteration   7: 1.551 ms/op
+# Warmup Iteration   8: 1.426 ms/op
+# Warmup Iteration   9: 1.612 ms/op
+# Warmup Iteration  10: 1.435 ms/op
+# Warmup Iteration  11: 1.429 ms/op
+# Warmup Iteration  12: 1.250 ms/op
+# Warmup Iteration  13: 1.252 ms/op
+# Warmup Iteration  14: 1.463 ms/op
+# Warmup Iteration  15: 1.455 ms/op
+# Warmup Iteration  16: 1.207 ms/op
+# Warmup Iteration  17: 1.195 ms/op
+# Warmup Iteration  18: 1.271 ms/op
+# Warmup Iteration  19: 1.317 ms/op
+# Warmup Iteration  20: 1.234 ms/op
+Iteration   1: 1.167 ms/op
+Iteration   2: 1.198 ms/op
+Iteration   3: 1.236 ms/op
+Iteration   4: 1.286 ms/op
+Iteration   5: 1.255 ms/op
+Iteration   6: 1.149 ms/op
+Iteration   7: 1.201 ms/op
+Iteration   8: 1.229 ms/op
+Iteration   9: 1.278 ms/op
+Iteration  10: 1.335 ms/op
+Iteration  11: 1.235 ms/op
+Iteration  12: 1.158 ms/op
+Iteration  13: 1.196 ms/op
+Iteration  14: 1.238 ms/op
+Iteration  15: 1.283 ms/op
+Iteration  16: 1.332 ms/op
+Iteration  17: 1.262 ms/op
+Iteration  18: 1.151 ms/op
+Iteration  19: 1.200 ms/op
+Iteration  20: 1.232 ms/op
+
+# Run progress: 46.67% complete, ETA 00:10:48
+# Fork: 5 of 10
+# Warmup Iteration   1: Aug 28, 2017 2:59:15 PM org.apache.axiom.util.stax.dialect.StAXDialectDetector detectDialect
+WARNING: Unable to determine dialect of the StAX implementation at jar:file:/home/moiz/Desktop/java-projects/ballerina-xslt-benchmark/target/benchmarks.jar!/
+Warning: org.apache.axiom.om.impl.common.serializer.push.sax.XMLReaderImpl: http://javax.xml.XMLConstants/property/accessExternalDTD
+Warning: org.apache.axiom.om.impl.common.serializer.push.sax.XMLReaderImpl: http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit
+5.247 ms/op
+# Warmup Iteration   2: 3.093 ms/op
+# Warmup Iteration   3: 2.253 ms/op
+# Warmup Iteration   4: 1.692 ms/op
+# Warmup Iteration   5: 1.666 ms/op
+# Warmup Iteration   6: 1.820 ms/op
+# Warmup Iteration   7: 1.417 ms/op
+# Warmup Iteration   8: 1.525 ms/op
+# Warmup Iteration   9: 1.472 ms/op
+# Warmup Iteration  10: 1.455 ms/op
+# Warmup Iteration  11: 1.427 ms/op
+# Warmup Iteration  12: 1.321 ms/op
+# Warmup Iteration  13: 1.434 ms/op
+# Warmup Iteration  14: 1.350 ms/op
+# Warmup Iteration  15: 1.396 ms/op
+# Warmup Iteration  16: 1.168 ms/op
+# Warmup Iteration  17: 1.224 ms/op
+# Warmup Iteration  18: 1.242 ms/op
+# Warmup Iteration  19: 1.289 ms/op
+# Warmup Iteration  20: 1.221 ms/op
+Iteration   1: 1.166 ms/op
+Iteration   2: 1.207 ms/op
+Iteration   3: 1.252 ms/op
+Iteration   4: 1.281 ms/op
+Iteration   5: 1.239 ms/op
+Iteration   6: 1.153 ms/op
+Iteration   7: 1.196 ms/op
+Iteration   8: 1.241 ms/op
+Iteration   9: 1.268 ms/op
+Iteration  10: 1.335 ms/op
+Iteration  11: 1.234 ms/op
+Iteration  12: 1.155 ms/op
+Iteration  13: 1.206 ms/op
+Iteration  14: 1.251 ms/op
+Iteration  15: 1.287 ms/op
+Iteration  16: 1.347 ms/op
+Iteration  17: 1.266 ms/op
+Iteration  18: 1.151 ms/op
+Iteration  19: 1.195 ms/op
+Iteration  20: 1.243 ms/op
+
+# Run progress: 50.00% complete, ETA 00:10:07
+# Fork: 6 of 10
+# Warmup Iteration   1: Aug 28, 2017 2:59:56 PM org.apache.axiom.util.stax.dialect.StAXDialectDetector detectDialect
+WARNING: Unable to determine dialect of the StAX implementation at jar:file:/home/moiz/Desktop/java-projects/ballerina-xslt-benchmark/target/benchmarks.jar!/
+Warning: org.apache.axiom.om.impl.common.serializer.push.sax.XMLReaderImpl: http://javax.xml.XMLConstants/property/accessExternalDTD
+Warning: org.apache.axiom.om.impl.common.serializer.push.sax.XMLReaderImpl: http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit
+5.689 ms/op
+# Warmup Iteration   2: 3.130 ms/op
+# Warmup Iteration   3: 2.607 ms/op
+# Warmup Iteration   4: 1.682 ms/op
+# Warmup Iteration   5: 1.701 ms/op
+# Warmup Iteration   6: 1.781 ms/op
+# Warmup Iteration   7: 1.464 ms/op
+# Warmup Iteration   8: 1.484 ms/op
+# Warmup Iteration   9: 1.438 ms/op
+# Warmup Iteration  10: 1.450 ms/op
+# Warmup Iteration  11: 1.540 ms/op
+# Warmup Iteration  12: 1.468 ms/op
+# Warmup Iteration  13: 1.279 ms/op
+# Warmup Iteration  14: 1.320 ms/op
+# Warmup Iteration  15: 1.351 ms/op
+# Warmup Iteration  16: 1.204 ms/op
+# Warmup Iteration  17: 1.200 ms/op
+# Warmup Iteration  18: 1.267 ms/op
+# Warmup Iteration  19: 1.275 ms/op
+# Warmup Iteration  20: 1.221 ms/op
+Iteration   1: 1.147 ms/op
+Iteration   2: 1.202 ms/op
+Iteration   3: 1.224 ms/op
+Iteration   4: 1.322 ms/op
+Iteration   5: 1.117 ms/op
+Iteration   6: 1.162 ms/op
+Iteration   7: 1.213 ms/op
+Iteration   8: 1.261 ms/op
+Iteration   9: 1.305 ms/op
+Iteration  10: 1.172 ms/op
+Iteration  11: 1.154 ms/op
+Iteration  12: 1.212 ms/op
+Iteration  13: 1.262 ms/op
+Iteration  14: 1.292 ms/op
+Iteration  15: 1.223 ms/op
+Iteration  16: 1.144 ms/op
+Iteration  17: 1.198 ms/op
+Iteration  18: 1.253 ms/op
+Iteration  19: 1.271 ms/op
+Iteration  20: 1.324 ms/op
+
+# Run progress: 53.33% complete, ETA 00:09:27
+# Fork: 7 of 10
+# Warmup Iteration   1: Aug 28, 2017 3:00:36 PM org.apache.axiom.util.stax.dialect.StAXDialectDetector detectDialect
+WARNING: Unable to determine dialect of the StAX implementation at jar:file:/home/moiz/Desktop/java-projects/ballerina-xslt-benchmark/target/benchmarks.jar!/
+Warning: org.apache.axiom.om.impl.common.serializer.push.sax.XMLReaderImpl: http://javax.xml.XMLConstants/property/accessExternalDTD
+Warning: org.apache.axiom.om.impl.common.serializer.push.sax.XMLReaderImpl: http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit
+5.507 ms/op
+# Warmup Iteration   2: 3.020 ms/op
+# Warmup Iteration   3: 2.408 ms/op
+# Warmup Iteration   4: 1.648 ms/op
+# Warmup Iteration   5: 1.919 ms/op
+# Warmup Iteration   6: 1.655 ms/op
+# Warmup Iteration   7: 1.461 ms/op
+# Warmup Iteration   8: 1.502 ms/op
+# Warmup Iteration   9: 1.462 ms/op
+# Warmup Iteration  10: 1.445 ms/op
+# Warmup Iteration  11: 1.399 ms/op
+# Warmup Iteration  12: 1.258 ms/op
+# Warmup Iteration  13: 1.302 ms/op
+# Warmup Iteration  14: 1.503 ms/op
+# Warmup Iteration  15: 1.814 ms/op
+# Warmup Iteration  16: 1.368 ms/op
+# Warmup Iteration  17: 1.198 ms/op
+# Warmup Iteration  18: 1.269 ms/op
+# Warmup Iteration  19: 1.297 ms/op
+# Warmup Iteration  20: 1.300 ms/op
+Iteration   1: 1.200 ms/op
+Iteration   2: 1.177 ms/op
+Iteration   3: 1.214 ms/op
+Iteration   4: 1.262 ms/op
+Iteration   5: 1.284 ms/op
+Iteration   6: 1.172 ms/op
+Iteration   7: 1.167 ms/op
+Iteration   8: 1.219 ms/op
+Iteration   9: 1.260 ms/op
+Iteration  10: 1.307 ms/op
+Iteration  11: 1.218 ms/op
+Iteration  12: 1.164 ms/op
+Iteration  13: 1.208 ms/op
+Iteration  14: 1.240 ms/op
+Iteration  15: 1.281 ms/op
+Iteration  16: 1.316 ms/op
+Iteration  17: 1.143 ms/op
+Iteration  18: 1.181 ms/op
+Iteration  19: 1.228 ms/op
+Iteration  20: 1.277 ms/op
+
+# Run progress: 56.67% complete, ETA 00:08:46
+# Fork: 8 of 10
+# Warmup Iteration   1: Aug 28, 2017 3:01:17 PM org.apache.axiom.util.stax.dialect.StAXDialectDetector detectDialect
+WARNING: Unable to determine dialect of the StAX implementation at jar:file:/home/moiz/Desktop/java-projects/ballerina-xslt-benchmark/target/benchmarks.jar!/
+Warning: org.apache.axiom.om.impl.common.serializer.push.sax.XMLReaderImpl: http://javax.xml.XMLConstants/property/accessExternalDTD
+Warning: org.apache.axiom.om.impl.common.serializer.push.sax.XMLReaderImpl: http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit
+5.755 ms/op
+# Warmup Iteration   2: 3.033 ms/op
+# Warmup Iteration   3: 2.456 ms/op
+# Warmup Iteration   4: 1.777 ms/op
+# Warmup Iteration   5: 1.870 ms/op
+# Warmup Iteration   6: 1.681 ms/op
+# Warmup Iteration   7: 1.390 ms/op
+# Warmup Iteration   8: 1.468 ms/op
+# Warmup Iteration   9: 1.481 ms/op
+# Warmup Iteration  10: 1.449 ms/op
+# Warmup Iteration  11: 1.389 ms/op
+# Warmup Iteration  12: 1.305 ms/op
+# Warmup Iteration  13: 1.472 ms/op
+# Warmup Iteration  14: 1.351 ms/op
+# Warmup Iteration  15: 1.373 ms/op
+# Warmup Iteration  16: 1.212 ms/op
+# Warmup Iteration  17: 1.199 ms/op
+# Warmup Iteration  18: 1.307 ms/op
+# Warmup Iteration  19: 1.317 ms/op
+# Warmup Iteration  20: 1.253 ms/op
+Iteration   1: 1.165 ms/op
+Iteration   2: 1.208 ms/op
+Iteration   3: 1.244 ms/op
+Iteration   4: 1.298 ms/op
+Iteration   5: 1.185 ms/op
+Iteration   6: 1.173 ms/op
+Iteration   7: 1.220 ms/op
+Iteration   8: 1.277 ms/op
+Iteration   9: 1.313 ms/op
+Iteration  10: 1.234 ms/op
+Iteration  11: 1.164 ms/op
+Iteration  12: 1.216 ms/op
+Iteration  13: 1.266 ms/op
+Iteration  14: 1.284 ms/op
+Iteration  15: 1.297 ms/op
+Iteration  16: 1.154 ms/op
+Iteration  17: 1.202 ms/op
+Iteration  18: 1.224 ms/op
+Iteration  19: 1.285 ms/op
+Iteration  20: 1.326 ms/op
+
+# Run progress: 60.00% complete, ETA 00:08:06
+# Fork: 9 of 10
+# Warmup Iteration   1: Aug 28, 2017 3:01:57 PM org.apache.axiom.util.stax.dialect.StAXDialectDetector detectDialect
+WARNING: Unable to determine dialect of the StAX implementation at jar:file:/home/moiz/Desktop/java-projects/ballerina-xslt-benchmark/target/benchmarks.jar!/
+Warning: org.apache.axiom.om.impl.common.serializer.push.sax.XMLReaderImpl: http://javax.xml.XMLConstants/property/accessExternalDTD
+Warning: org.apache.axiom.om.impl.common.serializer.push.sax.XMLReaderImpl: http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit
+5.546 ms/op
+# Warmup Iteration   2: 3.037 ms/op
+# Warmup Iteration   3: 2.362 ms/op
+# Warmup Iteration   4: 1.740 ms/op
+# Warmup Iteration   5: 1.752 ms/op
+# Warmup Iteration   6: 1.668 ms/op
+# Warmup Iteration   7: 1.492 ms/op
+# Warmup Iteration   8: 1.344 ms/op
+# Warmup Iteration   9: 1.434 ms/op
+# Warmup Iteration  10: 1.493 ms/op
+# Warmup Iteration  11: 1.423 ms/op
+# Warmup Iteration  12: 1.369 ms/op
+# Warmup Iteration  13: 1.522 ms/op
+# Warmup Iteration  14: 1.278 ms/op
+# Warmup Iteration  15: 1.370 ms/op
+# Warmup Iteration  16: 1.165 ms/op
+# Warmup Iteration  17: 1.199 ms/op
+# Warmup Iteration  18: 1.256 ms/op
+# Warmup Iteration  19: 1.279 ms/op
+# Warmup Iteration  20: 1.201 ms/op
+Iteration   1: 1.164 ms/op
+Iteration   2: 1.216 ms/op
+Iteration   3: 1.253 ms/op
+Iteration   4: 1.281 ms/op
+Iteration   5: 1.210 ms/op
+Iteration   6: 1.150 ms/op
+Iteration   7: 1.200 ms/op
+Iteration   8: 1.265 ms/op
+Iteration   9: 1.275 ms/op
+Iteration  10: 1.335 ms/op
+Iteration  11: 1.198 ms/op
+Iteration  12: 1.159 ms/op
+Iteration  13: 1.205 ms/op
+Iteration  14: 1.244 ms/op
+Iteration  15: 1.275 ms/op
+Iteration  16: 1.347 ms/op
+Iteration  17: 1.225 ms/op
+Iteration  18: 1.153 ms/op
+Iteration  19: 1.206 ms/op
+Iteration  20: 1.257 ms/op
+
+# Run progress: 63.33% complete, ETA 00:07:25
+# Fork: 10 of 10
+# Warmup Iteration   1: Aug 28, 2017 3:02:38 PM org.apache.axiom.util.stax.dialect.StAXDialectDetector detectDialect
+WARNING: Unable to determine dialect of the StAX implementation at jar:file:/home/moiz/Desktop/java-projects/ballerina-xslt-benchmark/target/benchmarks.jar!/
+Warning: org.apache.axiom.om.impl.common.serializer.push.sax.XMLReaderImpl: http://javax.xml.XMLConstants/property/accessExternalDTD
+Warning: org.apache.axiom.om.impl.common.serializer.push.sax.XMLReaderImpl: http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit
+4.995 ms/op
+# Warmup Iteration   2: 3.046 ms/op
+# Warmup Iteration   3: 2.310 ms/op
+# Warmup Iteration   4: 1.694 ms/op
+# Warmup Iteration   5: 1.740 ms/op
+# Warmup Iteration   6: 1.890 ms/op
+# Warmup Iteration   7: 1.608 ms/op
+# Warmup Iteration   8: 1.435 ms/op
+# Warmup Iteration   9: 1.504 ms/op
+# Warmup Iteration  10: 1.540 ms/op
+# Warmup Iteration  11: 1.367 ms/op
+# Warmup Iteration  12: 1.390 ms/op
+# Warmup Iteration  13: 1.726 ms/op
+# Warmup Iteration  14: 1.330 ms/op
+# Warmup Iteration  15: 1.435 ms/op
+# Warmup Iteration  16: 1.185 ms/op
+# Warmup Iteration  17: 1.201 ms/op
+# Warmup Iteration  18: 1.233 ms/op
+# Warmup Iteration  19: 1.217 ms/op
+# Warmup Iteration  20: 1.151 ms/op
+Iteration   1: 1.203 ms/op
+Iteration   2: 1.249 ms/op
+Iteration   3: 1.269 ms/op
+Iteration   4: 1.146 ms/op
+Iteration   5: 1.194 ms/op
+Iteration   6: 1.238 ms/op
+Iteration   7: 1.279 ms/op
+Iteration   8: 1.194 ms/op
+Iteration   9: 1.163 ms/op
+Iteration  10: 1.215 ms/op
+Iteration  11: 1.252 ms/op
+Iteration  12: 1.285 ms/op
+Iteration  13: 1.133 ms/op
+Iteration  14: 1.179 ms/op
+Iteration  15: 1.227 ms/op
+Iteration  16: 1.273 ms/op
+Iteration  17: 1.246 ms/op
+Iteration  18: 1.146 ms/op
+Iteration  19: 1.192 ms/op
+Iteration  20: 1.239 ms/op
+
+
+Result "org.ballerina.test.SAXTransformer.transform":
+  1.233 ±(99.9%) 0.014 ms/op [Average]
+  (min, avg, max) = (1.117, 1.233, 1.379), stdev = 0.057
+  CI (99.9%): [1.220, 1.247] (assumes normal distribution)
+
+
+# JMH version: 1.19
+# VM version: JDK 1.8.0_131, VM 25.131-b11
+# VM invoker: /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/java
+# VM options: <none>
+# Warmup: 20 iterations, 1 s each
+# Measurement: 20 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Sampling time
+# Benchmark: org.ballerina.test.SAXTransformer.transform
+
+# Run progress: 66.67% complete, ETA 00:06:45
+# Fork: 1 of 10
+# Warmup Iteration   1: Aug 28, 2017 3:03:18 PM org.apache.axiom.util.stax.dialect.StAXDialectDetector detectDialect
+WARNING: Unable to determine dialect of the StAX implementation at jar:file:/home/moiz/Desktop/java-projects/ballerina-xslt-benchmark/target/benchmarks.jar!/
+Warning: org.apache.axiom.om.impl.common.serializer.push.sax.XMLReaderImpl: http://javax.xml.XMLConstants/property/accessExternalDTD
+Warning: org.apache.axiom.om.impl.common.serializer.push.sax.XMLReaderImpl: http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit
+5.527 ±(99.9%) 2.391 ms/op
+# Warmup Iteration   2: 3.023 ±(99.9%) 0.166 ms/op
+# Warmup Iteration   3: 2.589 ±(99.9%) 0.404 ms/op
+# Warmup Iteration   4: 1.686 ±(99.9%) 0.046 ms/op
+# Warmup Iteration   5: 1.722 ±(99.9%) 0.048 ms/op
+# Warmup Iteration   6: 1.789 ±(99.9%) 0.060 ms/op
+# Warmup Iteration   7: 1.474 ±(99.9%) 0.188 ms/op
+# Warmup Iteration   8: 1.560 ±(99.9%) 0.045 ms/op
+# Warmup Iteration   9: 1.451 ±(99.9%) 0.035 ms/op
+# Warmup Iteration  10: 1.435 ±(99.9%) 0.021 ms/op
+# Warmup Iteration  11: 1.405 ±(99.9%) 0.171 ms/op
+# Warmup Iteration  12: 1.323 ±(99.9%) 0.026 ms/op
+# Warmup Iteration  13: 1.545 ±(99.9%) 0.035 ms/op
+# Warmup Iteration  14: 1.443 ±(99.9%) 0.043 ms/op
+# Warmup Iteration  15: 1.385 ±(99.9%) 0.041 ms/op
+# Warmup Iteration  16: 1.331 ±(99.9%) 0.198 ms/op
+# Warmup Iteration  17: 1.182 ±(99.9%) 0.014 ms/op
+# Warmup Iteration  18: 1.256 ±(99.9%) 0.023 ms/op
+# Warmup Iteration  19: 1.280 ±(99.9%) 0.022 ms/op
+# Warmup Iteration  20: 1.298 ±(99.9%) 0.029 ms/op
+Iteration   1: 1.325 ±(99.9%) 0.032 ms/op
+                 transform·p0.00:   1.262 ms/op
+                 transform·p0.50:   1.307 ms/op
+                 transform·p0.90:   1.343 ms/op
+                 transform·p0.95:   1.360 ms/op
+                 transform·p0.99:   1.564 ms/op
+                 transform·p0.999:  8.471 ms/op
+                 transform·p0.9999: 8.471 ms/op
+                 transform·p1.00:   8.471 ms/op
+
+Iteration   2: 1.230 ±(99.9%) 0.163 ms/op
+                 transform·p0.00:   1.087 ms/op
+                 transform·p0.50:   1.112 ms/op
+                 transform·p0.90:   1.346 ms/op
+                 transform·p0.95:   1.383 ms/op
+                 transform·p0.99:   2.159 ms/op
+                 transform·p0.999:  41.091 ms/op
+                 transform·p0.9999: 41.091 ms/op
+                 transform·p1.00:   41.091 ms/op
+
+Iteration   3: 1.169 ±(99.9%) 0.019 ms/op
+                 transform·p0.00:   1.118 ms/op
+                 transform·p0.50:   1.151 ms/op
+                 transform·p0.90:   1.186 ms/op
+                 transform·p0.95:   1.213 ms/op
+                 transform·p0.99:   1.647 ms/op
+                 transform·p0.999:  5.374 ms/op
+                 transform·p0.9999: 5.374 ms/op
+                 transform·p1.00:   5.374 ms/op
+
+Iteration   4: 1.215 ±(99.9%) 0.021 ms/op
+                 transform·p0.00:   1.155 ms/op
+                 transform·p0.50:   1.196 ms/op
+                 transform·p0.90:   1.229 ms/op
+                 transform·p0.95:   1.257 ms/op
+                 transform·p0.99:   1.545 ms/op
+                 transform·p0.999:  5.906 ms/op
+                 transform·p0.9999: 5.906 ms/op
+                 transform·p1.00:   5.906 ms/op
+
+Iteration   5: 1.261 ±(99.9%) 0.028 ms/op
+                 transform·p0.00:   1.202 ms/op
+                 transform·p0.50:   1.235 ms/op
+                 transform·p0.90:   1.278 ms/op
+                 transform·p0.95:   1.298 ms/op
+                 transform·p0.99:   1.757 ms/op
+                 transform·p0.999:  7.266 ms/op
+                 transform·p0.9999: 7.266 ms/op
+                 transform·p1.00:   7.266 ms/op
+
+Iteration   6: 1.282 ±(99.9%) 0.005 ms/op
+                 transform·p0.00:   1.245 ms/op
+                 transform·p0.50:   1.274 ms/op
+                 transform·p0.90:   1.300 ms/op
+                 transform·p0.95:   1.315 ms/op
+                 transform·p0.99:   1.528 ms/op
+                 transform·p0.999:  1.888 ms/op
+                 transform·p0.9999: 1.888 ms/op
+                 transform·p1.00:   1.888 ms/op
+
+Iteration   7: 1.396 ±(99.9%) 0.177 ms/op
+                 transform·p0.00:   1.083 ms/op
+                 transform·p0.50:   1.317 ms/op
+                 transform·p0.90:   1.360 ms/op
+                 transform·p0.95:   1.425 ms/op
+                 transform·p0.99:   2.094 ms/op
+                 transform·p0.999:  38.666 ms/op
+                 transform·p0.9999: 38.666 ms/op
+                 transform·p1.00:   38.666 ms/op
+
+Iteration   8: 1.130 ±(99.9%) 0.011 ms/op
+                 transform·p0.00:   1.083 ms/op
+                 transform·p0.50:   1.116 ms/op
+                 transform·p0.90:   1.143 ms/op
+                 transform·p0.95:   1.165 ms/op
+                 transform·p0.99:   1.530 ms/op
+                 transform·p0.999:  2.347 ms/op
+                 transform·p0.9999: 2.347 ms/op
+                 transform·p1.00:   2.347 ms/op
+
+Iteration   9: 1.168 ±(99.9%) 0.013 ms/op
+                 transform·p0.00:   1.126 ms/op
+                 transform·p0.50:   1.157 ms/op
+                 transform·p0.90:   1.188 ms/op
+                 transform·p0.95:   1.210 ms/op
+                 transform·p0.99:   1.405 ms/op
+                 transform·p0.999:  4.301 ms/op
+                 transform·p0.9999: 4.301 ms/op
+                 transform·p1.00:   4.301 ms/op
+
+Iteration  10: 1.229 ±(99.9%) 0.021 ms/op
+                 transform·p0.00:   1.171 ms/op
+                 transform·p0.50:   1.208 ms/op
+                 transform·p0.90:   1.243 ms/op
+                 transform·p0.95:   1.289 ms/op
+                 transform·p0.99:   1.688 ms/op
+                 transform·p0.999:  5.800 ms/op
+                 transform·p0.9999: 5.800 ms/op
+                 transform·p1.00:   5.800 ms/op
+
+Iteration  11: 1.290 ±(99.9%) 0.029 ms/op
+                 transform·p0.00:   1.217 ms/op
+                 transform·p0.50:   1.253 ms/op
+                 transform·p0.90:   1.309 ms/op
+                 transform·p0.95:   1.400 ms/op
+                 transform·p0.99:   2.221 ms/op
+                 transform·p0.999:  6.988 ms/op
+                 transform·p0.9999: 6.988 ms/op
+                 transform·p1.00:   6.988 ms/op
+
+Iteration  12: 1.311 ±(99.9%) 0.034 ms/op
+                 transform·p0.00:   1.253 ms/op
+                 transform·p0.50:   1.286 ms/op
+                 transform·p0.90:   1.315 ms/op
+                 transform·p0.95:   1.335 ms/op
+                 transform·p0.99:   1.985 ms/op
+                 transform·p0.999:  8.569 ms/op
+                 transform·p0.9999: 8.569 ms/op
+                 transform·p1.00:   8.569 ms/op
+
+Iteration  13: 1.341 ±(99.9%) 0.007 ms/op
+                 transform·p0.00:   1.292 ms/op
+                 transform·p0.50:   1.327 ms/op
+                 transform·p0.90:   1.375 ms/op
+                 transform·p0.95:   1.405 ms/op
+                 transform·p0.99:   1.631 ms/op
+                 transform·p0.999:  1.815 ms/op
+                 transform·p0.9999: 1.815 ms/op
+                 transform·p1.00:   1.815 ms/op
+
+Iteration  14: 1.197 ±(99.9%) 0.167 ms/op
+                 transform·p0.00:   1.083 ms/op
+                 transform·p0.50:   1.112 ms/op
+                 transform·p0.90:   1.152 ms/op
+                 transform·p0.95:   1.369 ms/op
+                 transform·p0.99:   2.283 ms/op
+                 transform·p0.999:  43.057 ms/op
+                 transform·p0.9999: 43.057 ms/op
+                 transform·p1.00:   43.057 ms/op
+
+Iteration  15: 1.169 ±(99.9%) 0.014 ms/op
+                 transform·p0.00:   1.120 ms/op
+                 transform·p0.50:   1.157 ms/op
+                 transform·p0.90:   1.188 ms/op
+                 transform·p0.95:   1.210 ms/op
+                 transform·p0.99:   1.436 ms/op
+                 transform·p0.999:  4.293 ms/op
+                 transform·p0.9999: 4.293 ms/op
+                 transform·p1.00:   4.293 ms/op
+
+Iteration  16: 1.224 ±(99.9%) 0.019 ms/op
+                 transform·p0.00:   1.161 ms/op
+                 transform·p0.50:   1.202 ms/op
+                 transform·p0.90:   1.237 ms/op
+                 transform·p0.95:   1.268 ms/op
+                 transform·p0.99:   1.929 ms/op
+                 transform·p0.999:  4.899 ms/op
+                 transform·p0.9999: 4.899 ms/op
+                 transform·p1.00:   4.899 ms/op
+
+Iteration  17: 1.284 ±(99.9%) 0.030 ms/op
+                 transform·p0.00:   1.210 ms/op
+                 transform·p0.50:   1.249 ms/op
+                 transform·p0.90:   1.288 ms/op
+                 transform·p0.95:   1.495 ms/op
+                 transform·p0.99:   2.067 ms/op
+                 transform·p0.999:  7.299 ms/op
+                 transform·p0.9999: 7.299 ms/op
+                 transform·p1.00:   7.299 ms/op
+
+Iteration  18: 1.304 ±(99.9%) 0.007 ms/op
+                 transform·p0.00:   1.251 ms/op
+                 transform·p0.50:   1.292 ms/op
+                 transform·p0.90:   1.329 ms/op
+                 transform·p0.95:   1.362 ms/op
+                 transform·p0.99:   1.650 ms/op
+                 transform·p0.999:  2.019 ms/op
+                 transform·p0.9999: 2.019 ms/op
+                 transform·p1.00:   2.019 ms/op
+
+Iteration  19: 1.359 ±(99.9%) 0.035 ms/op
+                 transform·p0.00:   1.303 ms/op
+                 transform·p0.50:   1.333 ms/op
+                 transform·p0.90:   1.372 ms/op
+                 transform·p0.95:   1.389 ms/op
+                 transform·p0.99:   1.994 ms/op
+                 transform·p0.999:  8.733 ms/op
+                 transform·p0.9999: 8.733 ms/op
+                 transform·p1.00:   8.733 ms/op
+
+Iteration  20: 1.330 ±(99.9%) 0.187 ms/op
+                 transform·p0.00:   1.083 ms/op
+                 transform·p0.50:   1.346 ms/op
+                 transform·p0.90:   1.389 ms/op
+                 transform·p0.95:   1.416 ms/op
+                 transform·p0.99:   2.040 ms/op
+                 transform·p0.999:  42.533 ms/op
+                 transform·p0.9999: 42.533 ms/op
+                 transform·p1.00:   42.533 ms/op
+
+
+# Run progress: 70.00% complete, ETA 00:06:04
+# Fork: 2 of 10
+# Warmup Iteration   1: Aug 28, 2017 3:03:59 PM org.apache.axiom.util.stax.dialect.StAXDialectDetector detectDialect
+WARNING: Unable to determine dialect of the StAX implementation at jar:file:/home/moiz/Desktop/java-projects/ballerina-xslt-benchmark/target/benchmarks.jar!/
+Warning: org.apache.axiom.om.impl.common.serializer.push.sax.XMLReaderImpl: http://javax.xml.XMLConstants/property/accessExternalDTD
+Warning: org.apache.axiom.om.impl.common.serializer.push.sax.XMLReaderImpl: http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit
+5.557 ±(99.9%) 2.640 ms/op
+# Warmup Iteration   2: 3.049 ±(99.9%) 0.132 ms/op
+# Warmup Iteration   3: 2.313 ±(99.9%) 0.311 ms/op
+# Warmup Iteration   4: 1.680 ±(99.9%) 0.038 ms/op
+# Warmup Iteration   5: 1.712 ±(99.9%) 0.050 ms/op
+# Warmup Iteration   6: 1.826 ±(99.9%) 0.208 ms/op
+# Warmup Iteration   7: 1.594 ±(99.9%) 0.040 ms/op
+# Warmup Iteration   8: 1.521 ±(99.9%) 0.041 ms/op
+# Warmup Iteration   9: 1.505 ±(99.9%) 0.045 ms/op
+# Warmup Iteration  10: 1.433 ±(99.9%) 0.022 ms/op
+# Warmup Iteration  11: 1.326 ±(99.9%) 0.143 ms/op
+# Warmup Iteration  12: 1.351 ±(99.9%) 0.026 ms/op
+# Warmup Iteration  13: 1.499 ±(99.9%) 0.036 ms/op
+# Warmup Iteration  14: 1.372 ±(99.9%) 0.021 ms/op
+# Warmup Iteration  15: 1.341 ±(99.9%) 0.149 ms/op
+# Warmup Iteration  16: 1.210 ±(99.9%) 0.018 ms/op
+# Warmup Iteration  17: 1.231 ±(99.9%) 0.019 ms/op
+# Warmup Iteration  18: 1.351 ±(99.9%) 0.031 ms/op
+# Warmup Iteration  19: 1.326 ±(99.9%) 0.157 ms/op
+# Warmup Iteration  20: 1.147 ±(99.9%) 0.014 ms/op
+Iteration   1: 1.180 ±(99.9%) 0.005 ms/op
+                 transform·p0.00:   1.135 ms/op
+                 transform·p0.50:   1.174 ms/op
+                 transform·p0.90:   1.204 ms/op
+                 transform·p0.95:   1.223 ms/op
+                 transform·p0.99:   1.407 ms/op
+                 transform·p0.999:  1.577 ms/op
+                 transform·p0.9999: 1.577 ms/op
+                 transform·p1.00:   1.577 ms/op
+
+Iteration   2: 1.235 ±(99.9%) 0.021 ms/op
+                 transform·p0.00:   1.184 ms/op
+                 transform·p0.50:   1.217 ms/op
+                 transform·p0.90:   1.243 ms/op
+                 transform·p0.95:   1.269 ms/op
+                 transform·p0.99:   1.597 ms/op
+                 transform·p0.999:  5.808 ms/op
+                 transform·p0.9999: 5.808 ms/op
+                 transform·p1.00:   5.808 ms/op
+
+Iteration   3: 1.279 ±(99.9%) 0.023 ms/op
+                 transform·p0.00:   1.221 ms/op
+                 transform·p0.50:   1.257 ms/op
+                 transform·p0.90:   1.291 ms/op
+                 transform·p0.95:   1.327 ms/op
+                 transform·p0.99:   1.740 ms/op
+                 transform·p0.999:  6.103 ms/op
+                 transform·p0.9999: 6.103 ms/op
+                 transform·p1.00:   6.103 ms/op
+
+Iteration   4: 1.204 ±(99.9%) 0.121 ms/op
+                 transform·p0.00:   1.085 ms/op
+                 transform·p0.50:   1.114 ms/op
+                 transform·p0.90:   1.294 ms/op
+                 transform·p0.95:   1.326 ms/op
+                 transform·p0.99:   1.872 ms/op
+                 transform·p0.999:  31.392 ms/op
+                 transform·p0.9999: 31.392 ms/op
+                 transform·p1.00:   31.392 ms/op
+
+Iteration   5: 1.173 ±(99.9%) 0.021 ms/op
+                 transform·p0.00:   1.114 ms/op
+                 transform·p0.50:   1.147 ms/op
+                 transform·p0.90:   1.174 ms/op
+                 transform·p0.95:   1.195 ms/op
+                 transform·p0.99:   2.060 ms/op
+                 transform·p0.999:  4.874 ms/op
+                 transform·p0.9999: 4.874 ms/op
+                 transform·p1.00:   4.874 ms/op
+
+Iteration   6: 1.219 ±(99.9%) 0.024 ms/op
+                 transform·p0.00:   1.153 ms/op
+                 transform·p0.50:   1.194 ms/op
+                 transform·p0.90:   1.229 ms/op
+                 transform·p0.95:   1.294 ms/op
+                 transform·p0.99:   1.725 ms/op
+                 transform·p0.999:  6.636 ms/op
+                 transform·p0.9999: 6.636 ms/op
+                 transform·p1.00:   6.636 ms/op
+
+Iteration   7: 1.257 ±(99.9%) 0.024 ms/op
+                 transform·p0.00:   1.196 ms/op
+                 transform·p0.50:   1.235 ms/op
+                 transform·p0.90:   1.287 ms/op
+                 transform·p0.95:   1.305 ms/op
+                 transform·p0.99:   1.711 ms/op
+                 transform·p0.999:  6.627 ms/op
+                 transform·p0.9999: 6.627 ms/op
+                 transform·p1.00:   6.627 ms/op
+
+Iteration   8: 1.292 ±(99.9%) 0.010 ms/op
+                 transform·p0.00:   1.237 ms/op
+                 transform·p0.50:   1.278 ms/op
+                 transform·p0.90:   1.311 ms/op
+                 transform·p0.95:   1.334 ms/op
+                 transform·p0.99:   1.759 ms/op
+                 transform·p0.999:  2.183 ms/op
+                 transform·p0.9999: 2.183 ms/op
+                 transform·p1.00:   2.183 ms/op
+
+Iteration   9: 1.345 ±(99.9%) 0.178 ms/op
+                 transform·p0.00:   1.087 ms/op
+                 transform·p0.50:   1.313 ms/op
+                 transform·p0.90:   1.350 ms/op
+                 transform·p0.95:   1.393 ms/op
+                 transform·p0.99:   1.801 ms/op
+                 transform·p0.999:  40.501 ms/op
+                 transform·p0.9999: 40.501 ms/op
+                 transform·p1.00:   40.501 ms/op
+
+Iteration  10: 1.137 ±(99.9%) 0.012 ms/op
+                 transform·p0.00:   1.094 ms/op
+                 transform·p0.50:   1.124 ms/op
+                 transform·p0.90:   1.155 ms/op
+                 transform·p0.95:   1.171 ms/op
+                 transform·p0.99:   1.423 ms/op
+                 transform·p0.999:  4.014 ms/op
+                 transform·p0.9999: 4.014 ms/op
+                 transform·p1.00:   4.014 ms/op
+
+Iteration  11: 1.179 ±(99.9%) 0.006 ms/op
+                 transform·p0.00:   1.135 ms/op
+                 transform·p0.50:   1.169 ms/op
+                 transform·p0.90:   1.202 ms/op
+                 transform·p0.95:   1.221 ms/op
+                 transform·p0.99:   1.479 ms/op
+                 transform·p0.999:  1.921 ms/op
+                 transform·p0.9999: 1.921 ms/op
+                 transform·p1.00:   1.921 ms/op
+
+Iteration  12: 1.237 ±(99.9%) 0.023 ms/op
+                 transform·p0.00:   1.180 ms/op
+                 transform·p0.50:   1.217 ms/op
+                 transform·p0.90:   1.245 ms/op
+                 transform·p0.95:   1.265 ms/op
+                 transform·p0.99:   1.878 ms/op
+                 transform·p0.999:  6.185 ms/op
+                 transform·p0.9999: 6.185 ms/op
+                 transform·p1.00:   6.185 ms/op
+
+Iteration  13: 1.282 ±(99.9%) 0.026 ms/op
+                 transform·p0.00:   1.227 ms/op
+                 transform·p0.50:   1.264 ms/op
+                 transform·p0.90:   1.292 ms/op
+                 transform·p0.95:   1.309 ms/op
+                 transform·p0.99:   1.681 ms/op
+                 transform·p0.999:  7.234 ms/op
+                 transform·p0.9999: 7.234 ms/op
+                 transform·p1.00:   7.234 ms/op
+
+Iteration  14: 1.324 ±(99.9%) 0.033 ms/op
+                 transform·p0.00:   1.268 ms/op
+                 transform·p0.50:   1.305 ms/op
+                 transform·p0.90:   1.338 ms/op
+                 transform·p0.95:   1.366 ms/op
+                 transform·p0.99:   1.707 ms/op
+                 transform·p0.999:  8.651 ms/op
+                 transform·p0.9999: 8.651 ms/op
+                 transform·p1.00:   8.651 ms/op
+
+Iteration  15: 1.305 ±(99.9%) 0.179 ms/op
+                 transform·p0.00:   1.083 ms/op
+                 transform·p0.50:   1.319 ms/op
+                 transform·p0.90:   1.358 ms/op
+                 transform·p0.95:   1.380 ms/op
+                 transform·p0.99:   2.023 ms/op
+                 transform·p0.999:  42.402 ms/op
+                 transform·p0.9999: 42.402 ms/op
+                 transform·p1.00:   42.402 ms/op
+
+Iteration  16: 1.235 ±(99.9%) 0.026 ms/op
+                 transform·p0.00:   1.108 ms/op
+                 transform·p0.50:   1.143 ms/op
+                 transform·p0.90:   1.497 ms/op
+                 transform·p0.95:   1.559 ms/op
+                 transform·p0.99:   1.950 ms/op
+                 transform·p0.999:  4.776 ms/op
+                 transform·p0.9999: 4.776 ms/op
+                 transform·p1.00:   4.776 ms/op
+
+Iteration  17: 1.189 ±(99.9%) 0.014 ms/op
+                 transform·p0.00:   1.139 ms/op
+                 transform·p0.50:   1.171 ms/op
+                 transform·p0.90:   1.200 ms/op
+                 transform·p0.95:   1.221 ms/op
+                 transform·p0.99:   1.758 ms/op
+                 transform·p0.999:  3.060 ms/op
+                 transform·p0.9999: 3.060 ms/op
+                 transform·p1.00:   3.060 ms/op
+
+Iteration  18: 1.238 ±(99.9%) 0.021 ms/op
+                 transform·p0.00:   1.186 ms/op
+                 transform·p0.50:   1.214 ms/op
+                 transform·p0.90:   1.243 ms/op
+                 transform·p0.95:   1.264 ms/op
+                 transform·p0.99:   1.978 ms/op
+                 transform·p0.999:  5.431 ms/op
+                 transform·p0.9999: 5.431 ms/op
+                 transform·p1.00:   5.431 ms/op
+
+Iteration  19: 1.297 ±(99.9%) 0.026 ms/op
+                 transform·p0.00:   1.223 ms/op
+                 transform·p0.50:   1.266 ms/op
+                 transform·p0.90:   1.335 ms/op
+                 transform·p0.95:   1.421 ms/op
+                 transform·p0.99:   1.888 ms/op
+                 transform·p0.999:  6.472 ms/op
+                 transform·p0.9999: 6.472 ms/op
+                 transform·p1.00:   6.472 ms/op
+
+Iteration  20: 1.353 ±(99.9%) 0.033 ms/op
+                 transform·p0.00:   1.270 ms/op
+                 transform·p0.50:   1.309 ms/op
+                 transform·p0.90:   1.371 ms/op
+                 transform·p0.95:   1.639 ms/op
+                 transform·p0.99:   1.956 ms/op
+                 transform·p0.999:  7.823 ms/op
+                 transform·p0.9999: 7.823 ms/op
+                 transform·p1.00:   7.823 ms/op
+
+
+# Run progress: 73.33% complete, ETA 00:05:24
+# Fork: 3 of 10
+# Warmup Iteration   1: Aug 28, 2017 3:04:39 PM org.apache.axiom.util.stax.dialect.StAXDialectDetector detectDialect
+WARNING: Unable to determine dialect of the StAX implementation at jar:file:/home/moiz/Desktop/java-projects/ballerina-xslt-benchmark/target/benchmarks.jar!/
+Warning: org.apache.axiom.om.impl.common.serializer.push.sax.XMLReaderImpl: http://javax.xml.XMLConstants/property/accessExternalDTD
+Warning: org.apache.axiom.om.impl.common.serializer.push.sax.XMLReaderImpl: http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit
+5.716 ±(99.9%) 2.529 ms/op
+# Warmup Iteration   2: 3.066 ±(99.9%) 0.152 ms/op
+# Warmup Iteration   3: 2.586 ±(99.9%) 0.327 ms/op
+# Warmup Iteration   4: 1.775 ±(99.9%) 0.067 ms/op
+# Warmup Iteration   5: 1.719 ±(99.9%) 0.049 ms/op
+# Warmup Iteration   6: 1.655 ±(99.9%) 0.039 ms/op
+# Warmup Iteration   7: 1.595 ±(99.9%) 0.164 ms/op
+# Warmup Iteration   8: 1.491 ±(99.9%) 0.034 ms/op
+# Warmup Iteration   9: 1.499 ±(99.9%) 0.033 ms/op
+# Warmup Iteration  10: 1.526 ±(99.9%) 0.025 ms/op
+# Warmup Iteration  11: 1.376 ±(99.9%) 0.141 ms/op
+# Warmup Iteration  12: 1.309 ±(99.9%) 0.024 ms/op
+# Warmup Iteration  13: 1.564 ±(99.9%) 0.049 ms/op
+# Warmup Iteration  14: 1.419 ±(99.9%) 0.026 ms/op
+# Warmup Iteration  15: 1.271 ±(99.9%) 0.135 ms/op
+# Warmup Iteration  16: 1.236 ±(99.9%) 0.023 ms/op
+# Warmup Iteration  17: 1.292 ±(99.9%) 0.032 ms/op
+# Warmup Iteration  18: 1.274 ±(99.9%) 0.133 ms/op
+# Warmup Iteration  19: 1.157 ±(99.9%) 0.014 ms/op
+# Warmup Iteration  20: 1.188 ±(99.9%) 0.011 ms/op
+Iteration   1: 1.231 ±(99.9%) 0.020 ms/op
+                 transform·p0.00:   1.186 ms/op
+                 transform·p0.50:   1.214 ms/op
+                 transform·p0.90:   1.247 ms/op
+                 transform·p0.95:   1.268 ms/op
+                 transform·p0.99:   1.548 ms/op
+                 transform·p0.999:  5.489 ms/op
+                 transform·p0.9999: 5.489 ms/op
+                 transform·p1.00:   5.489 ms/op
+
+Iteration   2: 1.302 ±(99.9%) 0.144 ms/op
+                 transform·p0.00:   1.077 ms/op
+                 transform·p0.50:   1.253 ms/op
+                 transform·p0.90:   1.303 ms/op
+                 transform·p0.95:   1.338 ms/op
+                 transform·p0.99:   1.686 ms/op
+                 transform·p0.999:  33.948 ms/op
+                 transform·p0.9999: 33.948 ms/op
+                 transform·p1.00:   33.948 ms/op
+
+Iteration   3: 1.129 ±(99.9%) 0.011 ms/op
+                 transform·p0.00:   1.087 ms/op
+                 transform·p0.50:   1.116 ms/op
+                 transform·p0.90:   1.141 ms/op
+                 transform·p0.95:   1.161 ms/op
+                 transform·p0.99:   1.628 ms/op
+                 transform·p0.999:  2.642 ms/op
+                 transform·p0.9999: 2.642 ms/op
+                 transform·p1.00:   2.642 ms/op
+
+Iteration   4: 1.180 ±(99.9%) 0.017 ms/op
+                 transform·p0.00:   1.124 ms/op
+                 transform·p0.50:   1.163 ms/op
+                 transform·p0.90:   1.196 ms/op
+                 transform·p0.95:   1.225 ms/op
+                 transform·p0.99:   1.725 ms/op
+                 transform·p0.999:  4.481 ms/op
+                 transform·p0.9999: 4.481 ms/op
+                 transform·p1.00:   4.481 ms/op
+
+Iteration   5: 1.223 ±(99.9%) 0.020 ms/op
+                 transform·p0.00:   1.174 ms/op
+                 transform·p0.50:   1.206 ms/op
+                 transform·p0.90:   1.239 ms/op
+                 transform·p0.95:   1.268 ms/op
+                 transform·p0.99:   1.519 ms/op
+                 transform·p0.999:  5.792 ms/op
+                 transform·p0.9999: 5.792 ms/op
+                 transform·p1.00:   5.792 ms/op
+
+Iteration   6: 1.281 ±(99.9%) 0.029 ms/op
+                 transform·p0.00:   1.217 ms/op
+                 transform·p0.50:   1.253 ms/op
+                 transform·p0.90:   1.294 ms/op
+                 transform·p0.95:   1.329 ms/op
+                 transform·p0.99:   1.962 ms/op
+                 transform·p0.999:  7.602 ms/op
+                 transform·p0.9999: 7.602 ms/op
+                 transform·p1.00:   7.602 ms/op
+
+Iteration   7: 1.306 ±(99.9%) 0.149 ms/op
+                 transform·p0.00:   1.075 ms/op
+                 transform·p0.50:   1.282 ms/op
+                 transform·p0.90:   1.323 ms/op
+                 transform·p0.95:   1.372 ms/op
+                 transform·p0.99:   1.973 ms/op
+                 transform·p0.999:  35.521 ms/op
+                 transform·p0.9999: 35.521 ms/op
+                 transform·p1.00:   35.521 ms/op
+
+Iteration   8: 1.203 ±(99.9%) 0.033 ms/op
+                 transform·p0.00:   1.098 ms/op
+                 transform·p0.50:   1.124 ms/op
+                 transform·p0.90:   1.392 ms/op
+                 transform·p0.95:   1.442 ms/op
+                 transform·p0.99:   1.986 ms/op
+                 transform·p0.999:  8.315 ms/op
+                 transform·p0.9999: 8.315 ms/op
+                 transform·p1.00:   8.315 ms/op
+
+Iteration   9: 1.168 ±(99.9%) 0.005 ms/op
+                 transform·p0.00:   1.122 ms/op
+                 transform·p0.50:   1.161 ms/op
+                 transform·p0.90:   1.194 ms/op
+                 transform·p0.95:   1.219 ms/op
+                 transform·p0.99:   1.393 ms/op
+                 transform·p0.999:  1.657 ms/op
+                 transform·p0.9999: 1.657 ms/op
+                 transform·p1.00:   1.657 ms/op
+
+Iteration  10: 1.223 ±(99.9%) 0.020 ms/op
+                 transform·p0.00:   1.174 ms/op
+                 transform·p0.50:   1.208 ms/op
+                 transform·p0.90:   1.239 ms/op
+                 transform·p0.95:   1.262 ms/op
+                 transform·p0.99:   1.525 ms/op
+                 transform·p0.999:  5.857 ms/op
+                 transform·p0.9999: 5.857 ms/op
+                 transform·p1.00:   5.857 ms/op
+
+Iteration  11: 1.265 ±(99.9%) 0.031 ms/op
+                 transform·p0.00:   1.212 ms/op
+                 transform·p0.50:   1.249 ms/op
+                 transform·p0.90:   1.282 ms/op
+                 transform·p0.95:   1.300 ms/op
+                 transform·p0.99:   1.499 ms/op
+                 transform·p0.999:  8.651 ms/op
+                 transform·p0.9999: 8.651 ms/op
+                 transform·p1.00:   8.651 ms/op
+
+Iteration  12: 1.289 ±(99.9%) 0.155 ms/op
+                 transform·p0.00:   1.079 ms/op
+                 transform·p0.50:   1.274 ms/op
+                 transform·p0.90:   1.316 ms/op
+                 transform·p0.95:   1.350 ms/op
+                 transform·p0.99:   1.916 ms/op
+                 transform·p0.999:  37.487 ms/op
+                 transform·p0.9999: 37.487 ms/op
+                 transform·p1.00:   37.487 ms/op
+
+Iteration  13: 1.140 ±(99.9%) 0.014 ms/op
+                 transform·p0.00:   1.092 ms/op
+                 transform·p0.50:   1.122 ms/op
+                 transform·p0.90:   1.161 ms/op
+                 transform·p0.95:   1.188 ms/op
+                 transform·p0.99:   1.524 ms/op
+                 transform·p0.999:  4.100 ms/op
+                 transform·p0.9999: 4.100 ms/op
+                 transform·p1.00:   4.100 ms/op
+
+Iteration  14: 1.179 ±(99.9%) 0.006 ms/op
+                 transform·p0.00:   1.141 ms/op
+                 transform·p0.50:   1.169 ms/op
+                 transform·p0.90:   1.200 ms/op
+                 transform·p0.95:   1.226 ms/op
+                 transform·p0.99:   1.445 ms/op
+                 transform·p0.999:  1.894 ms/op
+                 transform·p0.9999: 1.894 ms/op
+                 transform·p1.00:   1.894 ms/op
+
+Iteration  15: 1.242 ±(99.9%) 0.028 ms/op
+                 transform·p0.00:   1.176 ms/op
+                 transform·p0.50:   1.208 ms/op
+                 transform·p0.90:   1.246 ms/op
+                 transform·p0.95:   1.314 ms/op
+                 transform·p0.99:   2.153 ms/op
+                 transform·p0.999:  6.185 ms/op
+                 transform·p0.9999: 6.185 ms/op
+                 transform·p1.00:   6.185 ms/op
+
+Iteration  16: 1.276 ±(99.9%) 0.031 ms/op
+                 transform·p0.00:   1.212 ms/op
+                 transform·p0.50:   1.251 ms/op
+                 transform·p0.90:   1.284 ms/op
+                 transform·p0.95:   1.304 ms/op
+                 transform·p0.99:   1.833 ms/op
+                 transform·p0.999:  7.717 ms/op
+                 transform·p0.9999: 7.717 ms/op
+                 transform·p1.00:   7.717 ms/op
+
+Iteration  17: 1.293 ±(99.9%) 0.175 ms/op
+                 transform·p0.00:   1.079 ms/op
+                 transform·p0.50:   1.264 ms/op
+                 transform·p0.90:   1.298 ms/op
+                 transform·p0.95:   1.342 ms/op
+                 transform·p0.99:   2.476 ms/op
+                 transform·p0.999:  40.894 ms/op
+                 transform·p0.9999: 40.894 ms/op
+                 transform·p1.00:   40.894 ms/op
+
+Iteration  18: 1.144 ±(99.9%) 0.016 ms/op
+                 transform·p0.00:   1.094 ms/op
+                 transform·p0.50:   1.122 ms/op
+                 transform·p0.90:   1.161 ms/op
+                 transform·p0.95:   1.186 ms/op
+                 transform·p0.99:   1.697 ms/op
+                 transform·p0.999:  4.043 ms/op
+                 transform·p0.9999: 4.043 ms/op
+                 transform·p1.00:   4.043 ms/op
+
+Iteration  19: 1.199 ±(99.9%) 0.019 ms/op
+                 transform·p0.00:   1.143 ms/op
+                 transform·p0.50:   1.176 ms/op
+                 transform·p0.90:   1.225 ms/op
+                 transform·p0.95:   1.260 ms/op
+                 transform·p0.99:   1.598 ms/op
+                 transform·p0.999:  5.308 ms/op
+                 transform·p0.9999: 5.308 ms/op
+                 transform·p1.00:   5.308 ms/op
+
+Iteration  20: 1.234 ±(99.9%) 0.013 ms/op
+                 transform·p0.00:   1.182 ms/op
+                 transform·p0.50:   1.217 ms/op
+                 transform·p0.90:   1.260 ms/op
+                 transform·p0.95:   1.308 ms/op
+                 transform·p0.99:   1.673 ms/op
+                 transform·p0.999:  3.330 ms/op
+                 transform·p0.9999: 3.330 ms/op
+                 transform·p1.00:   3.330 ms/op
+
+
+# Run progress: 76.67% complete, ETA 00:04:43
+# Fork: 4 of 10
+# Warmup Iteration   1: Aug 28, 2017 3:05:20 PM org.apache.axiom.util.stax.dialect.StAXDialectDetector detectDialect
+WARNING: Unable to determine dialect of the StAX implementation at jar:file:/home/moiz/Desktop/java-projects/ballerina-xslt-benchmark/target/benchmarks.jar!/
+Warning: org.apache.axiom.om.impl.common.serializer.push.sax.XMLReaderImpl: http://javax.xml.XMLConstants/property/accessExternalDTD
+Warning: org.apache.axiom.om.impl.common.serializer.push.sax.XMLReaderImpl: http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit
+5.444 ±(99.9%) 2.370 ms/op
+# Warmup Iteration   2: 3.154 ±(99.9%) 0.140 ms/op
+# Warmup Iteration   3: 2.572 ±(99.9%) 0.285 ms/op
+# Warmup Iteration   4: 1.739 ±(99.9%) 0.060 ms/op
+# Warmup Iteration   5: 1.693 ±(99.9%) 0.040 ms/op
+# Warmup Iteration   6: 1.611 ±(99.9%) 0.140 ms/op
+# Warmup Iteration   7: 1.507 ±(99.9%) 0.038 ms/op
+# Warmup Iteration   8: 1.497 ±(99.9%) 0.041 ms/op
+# Warmup Iteration   9: 1.437 ±(99.9%) 0.038 ms/op
+# Warmup Iteration  10: 1.471 ±(99.9%) 0.149 ms/op
+# Warmup Iteration  11: 1.262 ±(99.9%) 0.022 ms/op
+# Warmup Iteration  12: 1.393 ±(99.9%) 0.027 ms/op
+# Warmup Iteration  13: 1.576 ±(99.9%) 0.052 ms/op
+# Warmup Iteration  14: 1.363 ±(99.9%) 0.021 ms/op
+# Warmup Iteration  15: 1.283 ±(99.9%) 0.144 ms/op
+# Warmup Iteration  16: 1.200 ±(99.9%) 0.020 ms/op
+# Warmup Iteration  17: 1.238 ±(99.9%) 0.023 ms/op
+# Warmup Iteration  18: 1.304 ±(99.9%) 0.024 ms/op
+# Warmup Iteration  19: 1.285 ±(99.9%) 0.141 ms/op
+# Warmup Iteration  20: 1.149 ±(99.9%) 0.014 ms/op
+Iteration   1: 1.199 ±(99.9%) 0.021 ms/op
+                 transform·p0.00:   1.139 ms/op
+                 transform·p0.50:   1.174 ms/op
+                 transform·p0.90:   1.210 ms/op
+                 transform·p0.95:   1.287 ms/op
+                 transform·p0.99:   1.755 ms/op
+                 transform·p0.999:  5.743 ms/op
+                 transform·p0.9999: 5.743 ms/op
+                 transform·p1.00:   5.743 ms/op
+
+Iteration   2: 1.226 ±(99.9%) 0.008 ms/op
+                 transform·p0.00:   1.182 ms/op
+                 transform·p0.50:   1.212 ms/op
+                 transform·p0.90:   1.245 ms/op
+                 transform·p0.95:   1.268 ms/op
+                 transform·p0.99:   1.548 ms/op
+                 transform·p0.999:  2.253 ms/op
+                 transform·p0.9999: 2.253 ms/op
+                 transform·p1.00:   2.253 ms/op
+
+Iteration   3: 1.282 ±(99.9%) 0.023 ms/op
+                 transform·p0.00:   1.219 ms/op
+                 transform·p0.50:   1.262 ms/op
+                 transform·p0.90:   1.298 ms/op
+                 transform·p0.95:   1.335 ms/op
+                 transform·p0.99:   1.746 ms/op
+                 transform·p0.999:  6.193 ms/op
+                 transform·p0.9999: 6.193 ms/op
+                 transform·p1.00:   6.193 ms/op
+
+Iteration   4: 1.191 ±(99.9%) 0.134 ms/op
+                 transform·p0.00:   1.083 ms/op
+                 transform·p0.50:   1.112 ms/op
+                 transform·p0.90:   1.159 ms/op
+                 transform·p0.95:   1.346 ms/op
+                 transform·p0.99:   2.199 ms/op
+                 transform·p0.999:  34.800 ms/op
+                 transform·p0.9999: 34.800 ms/op
+                 transform·p1.00:   34.800 ms/op
+
+Iteration   5: 1.161 ±(99.9%) 0.014 ms/op
+                 transform·p0.00:   1.120 ms/op
+                 transform·p0.50:   1.149 ms/op
+                 transform·p0.90:   1.179 ms/op
+                 transform·p0.95:   1.200 ms/op
+                 transform·p0.99:   1.453 ms/op
+                 transform·p0.999:  4.489 ms/op
+                 transform·p0.9999: 4.489 ms/op
+                 transform·p1.00:   4.489 ms/op
+
+Iteration   6: 1.214 ±(99.9%) 0.020 ms/op
+                 transform·p0.00:   1.159 ms/op
+                 transform·p0.50:   1.192 ms/op
+                 transform·p0.90:   1.231 ms/op
+                 transform·p0.95:   1.299 ms/op
+                 transform·p0.99:   1.610 ms/op
+                 transform·p0.999:  5.579 ms/op
+                 transform·p0.9999: 5.579 ms/op
+                 transform·p1.00:   5.579 ms/op
+
+Iteration   7: 1.265 ±(99.9%) 0.039 ms/op
+                 transform·p0.00:   1.202 ms/op
+                 transform·p0.50:   1.235 ms/op
+                 transform·p0.90:   1.274 ms/op
+                 transform·p0.95:   1.320 ms/op
+                 transform·p0.99:   2.008 ms/op
+                 transform·p0.999:  10.174 ms/op
+                 transform·p0.9999: 10.174 ms/op
+                 transform·p1.00:   10.174 ms/op
+
+Iteration   8: 1.293 ±(99.9%) 0.008 ms/op
+                 transform·p0.00:   1.239 ms/op
+                 transform·p0.50:   1.280 ms/op
+                 transform·p0.90:   1.321 ms/op
+                 transform·p0.95:   1.345 ms/op
+                 transform·p0.99:   1.697 ms/op
+                 transform·p0.999:  2.064 ms/op
+                 transform·p0.9999: 2.064 ms/op
+                 transform·p1.00:   2.064 ms/op
+
+Iteration   9: 1.298 ±(99.9%) 0.165 ms/op
+                 transform·p0.00:   1.081 ms/op
+                 transform·p0.50:   1.305 ms/op
+                 transform·p0.90:   1.360 ms/op
+                 transform·p0.95:   1.402 ms/op
+                 transform·p0.99:   1.983 ms/op
+                 transform·p0.999:  38.601 ms/op
+                 transform·p0.9999: 38.601 ms/op
+                 transform·p1.00:   38.601 ms/op
+
+Iteration  10: 1.144 ±(99.9%) 0.015 ms/op
+                 transform·p0.00:   1.094 ms/op
+                 transform·p0.50:   1.130 ms/op
+                 transform·p0.90:   1.157 ms/op
+                 transform·p0.95:   1.180 ms/op
+                 transform·p0.99:   1.516 ms/op
+                 transform·p0.999:  4.571 ms/op
+                 transform·p0.9999: 4.571 ms/op
+                 transform·p1.00:   4.571 ms/op
+
+Iteration  11: 1.196 ±(99.9%) 0.019 ms/op
+                 transform·p0.00:   1.137 ms/op
+                 transform·p0.50:   1.174 ms/op
+                 transform·p0.90:   1.217 ms/op
+                 transform·p0.95:   1.274 ms/op
+                 transform·p0.99:   1.649 ms/op
+                 transform·p0.999:  5.317 ms/op
+                 transform·p0.9999: 5.317 ms/op
+                 transform·p1.00:   5.317 ms/op
+
+Iteration  12: 1.225 ±(99.9%) 0.007 ms/op
+                 transform·p0.00:   1.180 ms/op
+                 transform·p0.50:   1.214 ms/op
+                 transform·p0.90:   1.243 ms/op
+                 transform·p0.95:   1.268 ms/op
+                 transform·p0.99:   1.558 ms/op
+                 transform·p0.999:  2.118 ms/op
+                 transform·p0.9999: 2.118 ms/op
+                 transform·p1.00:   2.118 ms/op
+
+Iteration  13: 1.280 ±(99.9%) 0.028 ms/op
+                 transform·p0.00:   1.225 ms/op
+                 transform·p0.50:   1.264 ms/op
+                 transform·p0.90:   1.296 ms/op
+                 transform·p0.95:   1.319 ms/op
+                 transform·p0.99:   1.555 ms/op
+                 transform·p0.999:  7.815 ms/op
+                 transform·p0.9999: 7.815 ms/op
+                 transform·p1.00:   7.815 ms/op
+
+Iteration  14: 1.336 ±(99.9%) 0.033 ms/op
+                 transform·p0.00:   1.276 ms/op
+                 transform·p0.50:   1.313 ms/op
+                 transform·p0.90:   1.354 ms/op
+                 transform·p0.95:   1.406 ms/op
+                 transform·p0.99:   1.695 ms/op
+                 transform·p0.999:  8.634 ms/op
+                 transform·p0.9999: 8.634 ms/op
+                 transform·p1.00:   8.634 ms/op
+
+Iteration  15: 1.258 ±(99.9%) 0.190 ms/op
+                 transform·p0.00:   1.081 ms/op
+                 transform·p0.50:   1.108 ms/op
+                 transform·p0.90:   1.354 ms/op
+                 transform·p0.95:   1.388 ms/op
+                 transform·p0.99:   1.881 ms/op
+                 transform·p0.999:  46.596 ms/op
+                 transform·p0.9999: 46.596 ms/op
+                 transform·p1.00:   46.596 ms/op
+
+Iteration  16: 1.154 ±(99.9%) 0.017 ms/op
+                 transform·p0.00:   1.102 ms/op
+                 transform·p0.50:   1.135 ms/op
+                 transform·p0.90:   1.165 ms/op
+                 transform·p0.95:   1.190 ms/op
+                 transform·p0.99:   1.915 ms/op
+                 transform·p0.999:  4.157 ms/op
+                 transform·p0.9999: 4.157 ms/op
+                 transform·p1.00:   4.157 ms/op
+
+Iteration  17: 1.205 ±(99.9%) 0.023 ms/op
+                 transform·p0.00:   1.143 ms/op
+                 transform·p0.50:   1.180 ms/op
+                 transform·p0.90:   1.227 ms/op
+                 transform·p0.95:   1.254 ms/op
+                 transform·p0.99:   1.736 ms/op
+                 transform·p0.999:  6.226 ms/op
+                 transform·p0.9999: 6.226 ms/op
+                 transform·p1.00:   6.226 ms/op
+
+Iteration  18: 1.238 ±(99.9%) 0.013 ms/op
+                 transform·p0.00:   1.190 ms/op
+                 transform·p0.50:   1.225 ms/op
+                 transform·p0.90:   1.251 ms/op
+                 transform·p0.95:   1.276 ms/op
+                 transform·p0.99:   1.631 ms/op
+                 transform·p0.999:  2.544 ms/op
+                 transform·p0.9999: 2.544 ms/op
+                 transform·p1.00:   2.544 ms/op
+
+Iteration  19: 1.293 ±(99.9%) 0.031 ms/op
+                 transform·p0.00:   1.231 ms/op
+                 transform·p0.50:   1.268 ms/op
+                 transform·p0.90:   1.310 ms/op
+                 transform·p0.95:   1.346 ms/op
+                 transform·p0.99:   1.877 ms/op
+                 transform·p0.999:  8.225 ms/op
+                 transform·p0.9999: 8.225 ms/op
+                 transform·p1.00:   8.225 ms/op
+
+Iteration  20: 1.338 ±(99.9%) 0.035 ms/op
+                 transform·p0.00:   1.274 ms/op
+                 transform·p0.50:   1.313 ms/op
+                 transform·p0.90:   1.358 ms/op
+                 transform·p0.95:   1.406 ms/op
+                 transform·p0.99:   1.668 ms/op
+                 transform·p0.999:  9.142 ms/op
+                 transform·p0.9999: 9.142 ms/op
+                 transform·p1.00:   9.142 ms/op
+
+
+# Run progress: 80.00% complete, ETA 00:04:03
+# Fork: 5 of 10
+# Warmup Iteration   1: Aug 28, 2017 3:06:00 PM org.apache.axiom.util.stax.dialect.StAXDialectDetector detectDialect
+WARNING: Unable to determine dialect of the StAX implementation at jar:file:/home/moiz/Desktop/java-projects/ballerina-xslt-benchmark/target/benchmarks.jar!/
+Warning: org.apache.axiom.om.impl.common.serializer.push.sax.XMLReaderImpl: http://javax.xml.XMLConstants/property/accessExternalDTD
+Warning: org.apache.axiom.om.impl.common.serializer.push.sax.XMLReaderImpl: http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit
+5.583 ±(99.9%) 2.405 ms/op
+# Warmup Iteration   2: 3.050 ±(99.9%) 0.150 ms/op
+# Warmup Iteration   3: 2.331 ±(99.9%) 0.326 ms/op
+# Warmup Iteration   4: 1.665 ±(99.9%) 0.061 ms/op
+# Warmup Iteration   5: 1.964 ±(99.9%) 0.076 ms/op
+# Warmup Iteration   6: 1.669 ±(99.9%) 0.143 ms/op
+# Warmup Iteration   7: 1.426 ±(99.9%) 0.031 ms/op
+# Warmup Iteration   8: 1.485 ±(99.9%) 0.037 ms/op
+# Warmup Iteration   9: 1.431 ±(99.9%) 0.035 ms/op
+# Warmup Iteration  10: 1.451 ±(99.9%) 0.043 ms/op
+# Warmup Iteration  11: 1.473 ±(99.9%) 0.165 ms/op
+# Warmup Iteration  12: 1.520 ±(99.9%) 0.041 ms/op
+# Warmup Iteration  13: 1.307 ±(99.9%) 0.019 ms/op
+# Warmup Iteration  14: 1.285 ±(99.9%) 0.025 ms/op
+# Warmup Iteration  15: 1.388 ±(99.9%) 0.165 ms/op
+# Warmup Iteration  16: 1.212 ±(99.9%) 0.023 ms/op
+# Warmup Iteration  17: 1.208 ±(99.9%) 0.020 ms/op
+# Warmup Iteration  18: 1.271 ±(99.9%) 0.026 ms/op
+# Warmup Iteration  19: 1.301 ±(99.9%) 0.030 ms/op
+# Warmup Iteration  20: 1.329 ±(99.9%) 0.154 ms/op
+Iteration   1: 1.144 ±(99.9%) 0.021 ms/op
+                 transform·p0.00:   1.085 ms/op
+                 transform·p0.50:   1.118 ms/op
+                 transform·p0.90:   1.161 ms/op
+                 transform·p0.95:   1.254 ms/op
+                 transform·p0.99:   1.629 ms/op
+                 transform·p0.999:  5.874 ms/op
+                 transform·p0.9999: 5.874 ms/op
+                 transform·p1.00:   5.874 ms/op
+
+Iteration   2: 1.175 ±(99.9%) 0.007 ms/op
+                 transform·p0.00:   1.128 ms/op
+                 transform·p0.50:   1.167 ms/op
+                 transform·p0.90:   1.196 ms/op
+                 transform·p0.95:   1.213 ms/op
+                 transform·p0.99:   1.491 ms/op
+                 transform·p0.999:  2.081 ms/op
+                 transform·p0.9999: 2.081 ms/op
+                 transform·p1.00:   2.081 ms/op
+
+Iteration   3: 1.255 ±(99.9%) 0.031 ms/op
+                 transform·p0.00:   1.178 ms/op
+                 transform·p0.50:   1.210 ms/op
+                 transform·p0.90:   1.245 ms/op
+                 transform·p0.95:   1.379 ms/op
+                 transform·p0.99:   2.413 ms/op
+                 transform·p0.999:  6.644 ms/op
+                 transform·p0.9999: 6.644 ms/op
+                 transform·p1.00:   6.644 ms/op
+
+Iteration   4: 1.279 ±(99.9%) 0.032 ms/op
+                 transform·p0.00:   1.204 ms/op
+                 transform·p0.50:   1.249 ms/op
+                 transform·p0.90:   1.288 ms/op
+                 transform·p0.95:   1.315 ms/op
+                 transform·p0.99:   2.068 ms/op
+                 transform·p0.999:  8.077 ms/op
+                 transform·p0.9999: 8.077 ms/op
+                 transform·p1.00:   8.077 ms/op
+
+Iteration   5: 1.313 ±(99.9%) 0.032 ms/op
+                 transform·p0.00:   1.253 ms/op
+                 transform·p0.50:   1.294 ms/op
+                 transform·p0.90:   1.331 ms/op
+                 transform·p0.95:   1.356 ms/op
+                 transform·p0.99:   1.604 ms/op
+                 transform·p0.999:  8.503 ms/op
+                 transform·p0.9999: 8.503 ms/op
+                 transform·p1.00:   8.503 ms/op
+
+Iteration   6: 1.196 ±(99.9%) 0.182 ms/op
+                 transform·p0.00:   1.081 ms/op
+                 transform·p0.50:   1.112 ms/op
+                 transform·p0.90:   1.309 ms/op
+                 transform·p0.95:   1.331 ms/op
+                 transform·p0.99:   1.540 ms/op
+                 transform·p0.999:  47.251 ms/op
+                 transform·p0.9999: 47.251 ms/op
+                 transform·p1.00:   47.251 ms/op
+
+Iteration   7: 1.167 ±(99.9%) 0.013 ms/op
+                 transform·p0.00:   1.116 ms/op
+                 transform·p0.50:   1.149 ms/op
+                 transform·p0.90:   1.186 ms/op
+                 transform·p0.95:   1.213 ms/op
+                 transform·p0.99:   1.542 ms/op
+                 transform·p0.999:  3.920 ms/op
+                 transform·p0.9999: 3.920 ms/op
+                 transform·p1.00:   3.920 ms/op
+
+Iteration   8: 1.211 ±(99.9%) 0.017 ms/op
+                 transform·p0.00:   1.165 ms/op
+                 transform·p0.50:   1.196 ms/op
+                 transform·p0.90:   1.223 ms/op
+                 transform·p0.95:   1.243 ms/op
+                 transform·p0.99:   1.525 ms/op
+                 transform·p0.999:  5.038 ms/op
+                 transform·p0.9999: 5.038 ms/op
+                 transform·p1.00:   5.038 ms/op
+
+Iteration   9: 1.246 ±(99.9%) 0.022 ms/op
+                 transform·p0.00:   1.196 ms/op
+                 transform·p0.50:   1.231 ms/op
+                 transform·p0.90:   1.266 ms/op
+                 transform·p0.95:   1.284 ms/op
+                 transform·p0.99:   1.500 ms/op
+                 transform·p0.999:  6.529 ms/op
+                 transform·p0.9999: 6.529 ms/op
+                 transform·p1.00:   6.529 ms/op
+
+Iteration  10: 1.285 ±(99.9%) 0.006 ms/op
+                 transform·p0.00:   1.241 ms/op
+                 transform·p0.50:   1.276 ms/op
+                 transform·p0.90:   1.309 ms/op
+                 transform·p0.95:   1.325 ms/op
+                 transform·p0.99:   1.574 ms/op
+                 transform·p0.999:  1.913 ms/op
+                 transform·p0.9999: 1.913 ms/op
+                 transform·p1.00:   1.913 ms/op
+
+Iteration  11: 1.304 ±(99.9%) 0.171 ms/op
+                 transform·p0.00:   1.081 ms/op
+                 transform·p0.50:   1.294 ms/op
+                 transform·p0.90:   1.330 ms/op
+                 transform·p0.95:   1.350 ms/op
+                 transform·p0.99:   1.935 ms/op
+                 transform·p0.999:  40.108 ms/op
+                 transform·p0.9999: 40.108 ms/op
+                 transform·p1.00:   40.108 ms/op
+
+Iteration  12: 1.141 ±(99.9%) 0.015 ms/op
+                 transform·p0.00:   1.098 ms/op
+                 transform·p0.50:   1.128 ms/op
+                 transform·p0.90:   1.153 ms/op
+                 transform·p0.95:   1.176 ms/op
+                 transform·p0.99:   1.452 ms/op
+                 transform·p0.999:  4.596 ms/op
+                 transform·p0.9999: 4.596 ms/op
+                 transform·p1.00:   4.596 ms/op
+
+Iteration  13: 1.198 ±(99.9%) 0.011 ms/op
+                 transform·p0.00:   1.139 ms/op
+                 transform·p0.50:   1.178 ms/op
+                 transform·p0.90:   1.210 ms/op
+                 transform·p0.95:   1.441 ms/op
+                 transform·p0.99:   1.694 ms/op
+                 transform·p0.999:  2.109 ms/op
+                 transform·p0.9999: 2.109 ms/op
+                 transform·p1.00:   2.109 ms/op
+
+Iteration  14: 1.231 ±(99.9%) 0.020 ms/op
+                 transform·p0.00:   1.186 ms/op
+                 transform·p0.50:   1.219 ms/op
+                 transform·p0.90:   1.247 ms/op
+                 transform·p0.95:   1.262 ms/op
+                 transform·p0.99:   1.470 ms/op
+                 transform·p0.999:  5.972 ms/op
+                 transform·p0.9999: 5.972 ms/op
+                 transform·p1.00:   5.972 ms/op
+
+Iteration  15: 1.295 ±(99.9%) 0.039 ms/op
+                 transform·p0.00:   1.229 ms/op
+                 transform·p0.50:   1.266 ms/op
+                 transform·p0.90:   1.300 ms/op
+                 transform·p0.95:   1.348 ms/op
+                 transform·p0.99:   1.856 ms/op
+                 transform·p0.999:  10.076 ms/op
+                 transform·p0.9999: 10.076 ms/op
+                 transform·p1.00:   10.076 ms/op
+
+Iteration  16: 1.327 ±(99.9%) 0.031 ms/op
+                 transform·p0.00:   1.266 ms/op
+                 transform·p0.50:   1.307 ms/op
+                 transform·p0.90:   1.339 ms/op
+                 transform·p0.95:   1.356 ms/op
+                 transform·p0.99:   1.664 ms/op
+                 transform·p0.999:  8.102 ms/op
+                 transform·p0.9999: 8.102 ms/op
+                 transform·p1.00:   8.102 ms/op
+
+Iteration  17: 1.221 ±(99.9%) 0.196 ms/op
+                 transform·p0.00:   1.079 ms/op
+                 transform·p0.50:   1.110 ms/op
+                 transform·p0.90:   1.327 ms/op
+                 transform·p0.95:   1.341 ms/op
+                 transform·p0.99:   2.182 ms/op
+                 transform·p0.999:  49.480 ms/op
+                 transform·p0.9999: 49.480 ms/op
+                 transform·p1.00:   49.480 ms/op
+
+Iteration  18: 1.163 ±(99.9%) 0.018 ms/op
+                 transform·p0.00:   1.110 ms/op
+                 transform·p0.50:   1.147 ms/op
+                 transform·p0.90:   1.192 ms/op
+                 transform·p0.95:   1.214 ms/op
+                 transform·p0.99:   1.386 ms/op
+                 transform·p0.999:  5.718 ms/op
+                 transform·p0.9999: 5.718 ms/op
+                 transform·p1.00:   5.718 ms/op
+
+Iteration  19: 1.216 ±(99.9%) 0.020 ms/op
+                 transform·p0.00:   1.163 ms/op
+                 transform·p0.50:   1.198 ms/op
+                 transform·p0.90:   1.235 ms/op
+                 transform·p0.95:   1.253 ms/op
+                 transform·p0.99:   1.738 ms/op
+                 transform·p0.999:  5.685 ms/op
+                 transform·p0.9999: 5.685 ms/op
+                 transform·p1.00:   5.685 ms/op
+
+Iteration  20: 1.262 ±(99.9%) 0.029 ms/op
+                 transform·p0.00:   1.200 ms/op
+                 transform·p0.50:   1.237 ms/op
+                 transform·p0.90:   1.280 ms/op
+                 transform·p0.95:   1.307 ms/op
+                 transform·p0.99:   1.714 ms/op
+                 transform·p0.999:  6.996 ms/op
+                 transform·p0.9999: 6.996 ms/op
+                 transform·p1.00:   6.996 ms/op
+
+
+# Run progress: 83.33% complete, ETA 00:03:22
+# Fork: 6 of 10
+# Warmup Iteration   1: Aug 28, 2017 3:06:41 PM org.apache.axiom.util.stax.dialect.StAXDialectDetector detectDialect
+WARNING: Unable to determine dialect of the StAX implementation at jar:file:/home/moiz/Desktop/java-projects/ballerina-xslt-benchmark/target/benchmarks.jar!/
+Warning: org.apache.axiom.om.impl.common.serializer.push.sax.XMLReaderImpl: http://javax.xml.XMLConstants/property/accessExternalDTD
+Warning: org.apache.axiom.om.impl.common.serializer.push.sax.XMLReaderImpl: http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit
+5.432 ±(99.9%) 2.355 ms/op
+# Warmup Iteration   2: 3.413 ±(99.9%) 0.223 ms/op
+# Warmup Iteration   3: 2.376 ±(99.9%) 0.387 ms/op
+# Warmup Iteration   4: 1.936 ±(99.9%) 0.081 ms/op
+# Warmup Iteration   5: 1.583 ±(99.9%) 0.041 ms/op
+# Warmup Iteration   6: 1.671 ±(99.9%) 0.183 ms/op
+# Warmup Iteration   7: 1.345 ±(99.9%) 0.019 ms/op
+# Warmup Iteration   8: 1.499 ±(99.9%) 0.038 ms/op
+# Warmup Iteration   9: 1.449 ±(99.9%) 0.030 ms/op
+# Warmup Iteration  10: 1.510 ±(99.9%) 0.151 ms/op
+# Warmup Iteration  11: 1.260 ±(99.9%) 0.016 ms/op
+# Warmup Iteration  12: 1.364 ±(99.9%) 0.025 ms/op
+# Warmup Iteration  13: 1.447 ±(99.9%) 0.031 ms/op
+# Warmup Iteration  14: 1.369 ±(99.9%) 0.036 ms/op
+# Warmup Iteration  15: 1.357 ±(99.9%) 0.184 ms/op
+# Warmup Iteration  16: 1.179 ±(99.9%) 0.013 ms/op
+# Warmup Iteration  17: 1.232 ±(99.9%) 0.012 ms/op
+# Warmup Iteration  18: 1.293 ±(99.9%) 0.029 ms/op
+# Warmup Iteration  19: 1.351 ±(99.9%) 0.054 ms/op
+# Warmup Iteration  20: 1.311 ±(99.9%) 0.164 ms/op
+Iteration   1: 1.144 ±(99.9%) 0.016 ms/op
+                 transform·p0.00:   1.092 ms/op
+                 transform·p0.50:   1.122 ms/op
+                 transform·p0.90:   1.190 ms/op
+                 transform·p0.95:   1.210 ms/op
+                 transform·p0.99:   1.515 ms/op
+                 transform·p0.999:  4.841 ms/op
+                 transform·p0.9999: 4.841 ms/op
+                 transform·p1.00:   4.841 ms/op
+
+Iteration   2: 1.177 ±(99.9%) 0.009 ms/op
+                 transform·p0.00:   1.124 ms/op
+                 transform·p0.50:   1.167 ms/op
+                 transform·p0.90:   1.198 ms/op
+                 transform·p0.95:   1.213 ms/op
+                 transform·p0.99:   1.436 ms/op
+                 transform·p0.999:  2.560 ms/op
+                 transform·p0.9999: 2.560 ms/op
+                 transform·p1.00:   2.560 ms/op
+
+Iteration   3: 1.221 ±(99.9%) 0.017 ms/op
+                 transform·p0.00:   1.174 ms/op
+                 transform·p0.50:   1.206 ms/op
+                 transform·p0.90:   1.237 ms/op
+                 transform·p0.95:   1.260 ms/op
+                 transform·p0.99:   1.533 ms/op
+                 transform·p0.999:  5.186 ms/op
+                 transform·p0.9999: 5.186 ms/op
+                 transform·p1.00:   5.186 ms/op
+
+Iteration   4: 1.280 ±(99.9%) 0.030 ms/op
+                 transform·p0.00:   1.212 ms/op
+                 transform·p0.50:   1.249 ms/op
+                 transform·p0.90:   1.282 ms/op
+                 transform·p0.95:   1.325 ms/op
+                 transform·p0.99:   2.055 ms/op
+                 transform·p0.999:  7.102 ms/op
+                 transform·p0.9999: 7.102 ms/op
+                 transform·p1.00:   7.102 ms/op
+
+Iteration   5: 1.253 ±(99.9%) 0.147 ms/op
+                 transform·p0.00:   1.075 ms/op
+                 transform·p0.50:   1.260 ms/op
+                 transform·p0.90:   1.305 ms/op
+                 transform·p0.95:   1.346 ms/op
+                 transform·p0.99:   1.717 ms/op
+                 transform·p0.999:  36.438 ms/op
+                 transform·p0.9999: 36.438 ms/op
+                 transform·p1.00:   36.438 ms/op
+
+Iteration   6: 1.137 ±(99.9%) 0.013 ms/op
+                 transform·p0.00:   1.092 ms/op
+                 transform·p0.50:   1.124 ms/op
+                 transform·p0.90:   1.153 ms/op
+                 transform·p0.95:   1.169 ms/op
+                 transform·p0.99:   1.479 ms/op
+                 transform·p0.999:  4.002 ms/op
+                 transform·p0.9999: 4.002 ms/op
+                 transform·p1.00:   4.002 ms/op
+
+Iteration   7: 1.207 ±(99.9%) 0.031 ms/op
+                 transform·p0.00:   1.135 ms/op
+                 transform·p0.50:   1.171 ms/op
+                 transform·p0.90:   1.249 ms/op
+                 transform·p0.95:   1.255 ms/op
+                 transform·p0.99:   1.709 ms/op
+                 transform·p0.999:  8.585 ms/op
+                 transform·p0.9999: 8.585 ms/op
+                 transform·p1.00:   8.585 ms/op
+
+Iteration   8: 1.226 ±(99.9%) 0.013 ms/op
+                 transform·p0.00:   1.174 ms/op
+                 transform·p0.50:   1.208 ms/op
+                 transform·p0.90:   1.245 ms/op
+                 transform·p0.95:   1.277 ms/op
+                 transform·p0.99:   1.581 ms/op
+                 transform·p0.999:  2.433 ms/op
+                 transform·p0.9999: 2.433 ms/op
+                 transform·p1.00:   2.433 ms/op
+
+Iteration   9: 1.276 ±(99.9%) 0.030 ms/op
+                 transform·p0.00:   1.214 ms/op
+                 transform·p0.50:   1.253 ms/op
+                 transform·p0.90:   1.286 ms/op
+                 transform·p0.95:   1.303 ms/op
+                 transform·p0.99:   2.045 ms/op
+                 transform·p0.999:  7.569 ms/op
+                 transform·p0.9999: 7.569 ms/op
+                 transform·p1.00:   7.569 ms/op
+
+Iteration  10: 1.229 ±(99.9%) 0.149 ms/op
+                 transform·p0.00:   1.073 ms/op
+                 transform·p0.50:   1.112 ms/op
+                 transform·p0.90:   1.296 ms/op
+                 transform·p0.95:   1.317 ms/op
+                 transform·p0.99:   1.725 ms/op
+                 transform·p0.999:  37.749 ms/op
+                 transform·p0.9999: 37.749 ms/op
+                 transform·p1.00:   37.749 ms/op
+
+Iteration  11: 1.144 ±(99.9%) 0.012 ms/op
+                 transform·p0.00:   1.102 ms/op
+                 transform·p0.50:   1.133 ms/op
+                 transform·p0.90:   1.165 ms/op
+                 transform·p0.95:   1.184 ms/op
+                 transform·p0.99:   1.355 ms/op
+                 transform·p0.999:  4.002 ms/op
+                 transform·p0.9999: 4.002 ms/op
+                 transform·p1.00:   4.002 ms/op
+
+Iteration  12: 1.194 ±(99.9%) 0.019 ms/op
+                 transform·p0.00:   1.145 ms/op
+                 transform·p0.50:   1.178 ms/op
+                 transform·p0.90:   1.206 ms/op
+                 transform·p0.95:   1.227 ms/op
+                 transform·p0.99:   1.699 ms/op
+                 transform·p0.999:  5.349 ms/op
+                 transform·p0.9999: 5.349 ms/op
+                 transform·p1.00:   5.349 ms/op
+
+Iteration  13: 1.225 ±(99.9%) 0.006 ms/op
+                 transform·p0.00:   1.182 ms/op
+                 transform·p0.50:   1.217 ms/op
+                 transform·p0.90:   1.247 ms/op
+                 transform·p0.95:   1.266 ms/op
+                 transform·p0.99:   1.467 ms/op
+                 transform·p0.999:  1.968 ms/op
+                 transform·p0.9999: 1.968 ms/op
+                 transform·p1.00:   1.968 ms/op
+
+Iteration  14: 1.278 ±(99.9%) 0.032 ms/op
+                 transform·p0.00:   1.223 ms/op
+                 transform·p0.50:   1.262 ms/op
+                 transform·p0.90:   1.294 ms/op
+                 transform·p0.95:   1.313 ms/op
+                 transform·p0.99:   1.543 ms/op
+                 transform·p0.999:  8.667 ms/op
+                 transform·p0.9999: 8.667 ms/op
+                 transform·p1.00:   8.667 ms/op
+
+Iteration  15: 1.224 ±(99.9%) 0.153 ms/op
+                 transform·p0.00:   1.075 ms/op
+                 transform·p0.50:   1.104 ms/op
+                 transform·p0.90:   1.303 ms/op
+                 transform·p0.95:   1.336 ms/op
+                 transform·p0.99:   2.342 ms/op
+                 transform·p0.999:  38.666 ms/op
+                 transform·p0.9999: 38.666 ms/op
+                 transform·p1.00:   38.666 ms/op
+
+Iteration  16: 1.157 ±(99.9%) 0.016 ms/op
+                 transform·p0.00:   1.098 ms/op
+                 transform·p0.50:   1.135 ms/op
+                 transform·p0.90:   1.174 ms/op
+                 transform·p0.95:   1.200 ms/op
+                 transform·p0.99:   1.886 ms/op
+                 transform·p0.999:  3.895 ms/op
+                 transform·p0.9999: 3.895 ms/op
+                 transform·p1.00:   3.895 ms/op
+
+Iteration  17: 1.197 ±(99.9%) 0.025 ms/op
+                 transform·p0.00:   1.147 ms/op
+                 transform·p0.50:   1.182 ms/op
+                 transform·p0.90:   1.210 ms/op
+                 transform·p0.95:   1.227 ms/op
+                 transform·p0.99:   1.445 ms/op
+                 transform·p0.999:  7.184 ms/op
+                 transform·p0.9999: 7.184 ms/op
+                 transform·p1.00:   7.184 ms/op
+
+Iteration  18: 1.237 ±(99.9%) 0.024 ms/op
+                 transform·p0.00:   1.186 ms/op
+                 transform·p0.50:   1.223 ms/op
+                 transform·p0.90:   1.253 ms/op
+                 transform·p0.95:   1.274 ms/op
+                 transform·p0.99:   1.518 ms/op
+                 transform·p0.999:  6.947 ms/op
+                 transform·p0.9999: 6.947 ms/op
+                 transform·p1.00:   6.947 ms/op
+
+Iteration  19: 1.284 ±(99.9%) 0.012 ms/op
+                 transform·p0.00:   1.227 ms/op
+                 transform·p0.50:   1.265 ms/op
+                 transform·p0.90:   1.305 ms/op
+                 transform·p0.95:   1.359 ms/op
+                 transform·p0.99:   1.772 ms/op
+                 transform·p0.999:  2.560 ms/op
+                 transform·p0.9999: 2.560 ms/op
+                 transform·p1.00:   2.560 ms/op
+
+Iteration  20: 1.188 ±(99.9%) 0.148 ms/op
+                 transform·p0.00:   1.075 ms/op
+                 transform·p0.50:   1.106 ms/op
+                 transform·p0.90:   1.282 ms/op
+                 transform·p0.95:   1.306 ms/op
+                 transform·p0.99:   1.675 ms/op
+                 transform·p0.999:  38.601 ms/op
+                 transform·p0.9999: 38.601 ms/op
+                 transform·p1.00:   38.601 ms/op
+
+
+# Run progress: 86.67% complete, ETA 00:02:42
+# Fork: 7 of 10
+# Warmup Iteration   1: Aug 28, 2017 3:07:22 PM org.apache.axiom.util.stax.dialect.StAXDialectDetector detectDialect
+WARNING: Unable to determine dialect of the StAX implementation at jar:file:/home/moiz/Desktop/java-projects/ballerina-xslt-benchmark/target/benchmarks.jar!/
+Warning: org.apache.axiom.om.impl.common.serializer.push.sax.XMLReaderImpl: http://javax.xml.XMLConstants/property/accessExternalDTD
+Warning: org.apache.axiom.om.impl.common.serializer.push.sax.XMLReaderImpl: http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit
+5.753 ±(99.9%) 2.543 ms/op
+# Warmup Iteration   2: 3.090 ±(99.9%) 0.137 ms/op
+# Warmup Iteration   3: 2.382 ±(99.9%) 0.364 ms/op
+# Warmup Iteration   4: 1.651 ±(99.9%) 0.049 ms/op
+# Warmup Iteration   5: 1.714 ±(99.9%) 0.056 ms/op
+# Warmup Iteration   6: 2.147 ±(99.9%) 0.078 ms/op
+# Warmup Iteration   7: 1.668 ±(99.9%) 0.190 ms/op
+# Warmup Iteration   8: 1.413 ±(99.9%) 0.027 ms/op
+# Warmup Iteration   9: 1.479 ±(99.9%) 0.031 ms/op
+# Warmup Iteration  10: 1.447 ±(99.9%) 0.019 ms/op
+# Warmup Iteration  11: 1.446 ±(99.9%) 0.154 ms/op
+# Warmup Iteration  12: 1.586 ±(99.9%) 0.049 ms/op
+# Warmup Iteration  13: 1.412 ±(99.9%) 0.042 ms/op
+# Warmup Iteration  14: 1.296 ±(99.9%) 0.025 ms/op
+# Warmup Iteration  15: 1.335 ±(99.9%) 0.146 ms/op
+# Warmup Iteration  16: 1.176 ±(99.9%) 0.014 ms/op
+# Warmup Iteration  17: 1.236 ±(99.9%) 0.025 ms/op
+# Warmup Iteration  18: 1.286 ±(99.9%) 0.015 ms/op
+# Warmup Iteration  19: 1.323 ±(99.9%) 0.034 ms/op
+# Warmup Iteration  20: 1.225 ±(99.9%) 0.169 ms/op
+Iteration   1: 1.165 ±(99.9%) 0.017 ms/op
+                 transform·p0.00:   1.110 ms/op
+                 transform·p0.50:   1.139 ms/op
+                 transform·p0.90:   1.174 ms/op
+                 transform·p0.95:   1.204 ms/op
+                 transform·p0.99:   1.897 ms/op
+                 transform·p0.999:  4.149 ms/op
+                 transform·p0.9999: 4.149 ms/op
+                 transform·p1.00:   4.149 ms/op
+
+Iteration   2: 1.216 ±(99.9%) 0.021 ms/op
+                 transform·p0.00:   1.155 ms/op
+                 transform·p0.50:   1.190 ms/op
+                 transform·p0.90:   1.243 ms/op
+                 transform·p0.95:   1.340 ms/op
+                 transform·p0.99:   1.678 ms/op
+                 transform·p0.999:  5.341 ms/op
+                 transform·p0.9999: 5.341 ms/op
+                 transform·p1.00:   5.341 ms/op
+
+Iteration   3: 1.245 ±(99.9%) 0.027 ms/op
+                 transform·p0.00:   1.188 ms/op
+                 transform·p0.50:   1.225 ms/op
+                 transform·p0.90:   1.255 ms/op
+                 transform·p0.95:   1.286 ms/op
+                 transform·p0.99:   1.654 ms/op
+                 transform·p0.999:  7.274 ms/op
+                 transform·p0.9999: 7.274 ms/op
+                 transform·p1.00:   7.274 ms/op
+
+Iteration   4: 1.299 ±(99.9%) 0.016 ms/op
+                 transform·p0.00:   1.233 ms/op
+                 transform·p0.50:   1.270 ms/op
+                 transform·p0.90:   1.315 ms/op
+                 transform·p0.95:   1.424 ms/op
+                 transform·p0.99:   1.958 ms/op
+                 transform·p0.999:  2.519 ms/op
+                 transform·p0.9999: 2.519 ms/op
+                 transform·p1.00:   2.519 ms/op
+
+Iteration   5: 1.182 ±(99.9%) 0.144 ms/op
+                 transform·p0.00:   1.075 ms/op
+                 transform·p0.50:   1.104 ms/op
+                 transform·p0.90:   1.286 ms/op
+                 transform·p0.95:   1.311 ms/op
+                 transform·p0.99:   1.833 ms/op
+                 transform·p0.999:  37.618 ms/op
+                 transform·p0.9999: 37.618 ms/op
+                 transform·p1.00:   37.618 ms/op
+
+Iteration   6: 1.158 ±(99.9%) 0.022 ms/op
+                 transform·p0.00:   1.108 ms/op
+                 transform·p0.50:   1.143 ms/op
+                 transform·p0.90:   1.169 ms/op
+                 transform·p0.95:   1.188 ms/op
+                 transform·p0.99:   1.551 ms/op
+                 transform·p0.999:  6.463 ms/op
+                 transform·p0.9999: 6.463 ms/op
+                 transform·p1.00:   6.463 ms/op
+
+Iteration   7: 1.207 ±(99.9%) 0.019 ms/op
+                 transform·p0.00:   1.161 ms/op
+                 transform·p0.50:   1.194 ms/op
+                 transform·p0.90:   1.225 ms/op
+                 transform·p0.95:   1.247 ms/op
+                 transform·p0.99:   1.468 ms/op
+                 transform·p0.999:  5.833 ms/op
+                 transform·p0.9999: 5.833 ms/op
+                 transform·p1.00:   5.833 ms/op
+
+Iteration   8: 1.249 ±(99.9%) 0.024 ms/op
+                 transform·p0.00:   1.200 ms/op
+                 transform·p0.50:   1.231 ms/op
+                 transform·p0.90:   1.268 ms/op
+                 transform·p0.95:   1.292 ms/op
+                 transform·p0.99:   1.528 ms/op
+                 transform·p0.999:  6.898 ms/op
+                 transform·p0.9999: 6.898 ms/op
+                 transform·p1.00:   6.898 ms/op
+
+Iteration   9: 1.283 ±(99.9%) 0.006 ms/op
+                 transform·p0.00:   1.239 ms/op
+                 transform·p0.50:   1.272 ms/op
+                 transform·p0.90:   1.309 ms/op
+                 transform·p0.95:   1.343 ms/op
+                 transform·p0.99:   1.518 ms/op
+                 transform·p0.999:  1.903 ms/op
+                 transform·p0.9999: 1.903 ms/op
+                 transform·p1.00:   1.903 ms/op
+
+Iteration  10: 1.302 ±(99.9%) 0.171 ms/op
+                 transform·p0.00:   1.073 ms/op
+                 transform·p0.50:   1.298 ms/op
+                 transform·p0.90:   1.336 ms/op
+                 transform·p0.95:   1.367 ms/op
+                 transform·p0.99:   2.091 ms/op
+                 transform·p0.999:  40.108 ms/op
+                 transform·p0.9999: 40.108 ms/op
+                 transform·p1.00:   40.108 ms/op
+
+Iteration  11: 1.138 ±(99.9%) 0.022 ms/op
+                 transform·p0.00:   1.090 ms/op
+                 transform·p0.50:   1.122 ms/op
+                 transform·p0.90:   1.147 ms/op
+                 transform·p0.95:   1.165 ms/op
+                 transform·p0.99:   1.551 ms/op
+                 transform·p0.999:  6.619 ms/op
+                 transform·p0.9999: 6.619 ms/op
+                 transform·p1.00:   6.619 ms/op
+
+Iteration  12: 1.183 ±(99.9%) 0.018 ms/op
+                 transform·p0.00:   1.130 ms/op
+                 transform·p0.50:   1.171 ms/op
+                 transform·p0.90:   1.203 ms/op
+                 transform·p0.95:   1.223 ms/op
+                 transform·p0.99:   1.417 ms/op
+                 transform·p0.999:  5.620 ms/op
+                 transform·p0.9999: 5.620 ms/op
+                 transform·p1.00:   5.620 ms/op
+
+Iteration  13: 1.223 ±(99.9%) 0.006 ms/op
+                 transform·p0.00:   1.180 ms/op
+                 transform·p0.50:   1.212 ms/op
+                 transform·p0.90:   1.241 ms/op
+                 transform·p0.95:   1.257 ms/op
+                 transform·p0.99:   1.548 ms/op
+                 transform·p0.999:  1.700 ms/op
+                 transform·p0.9999: 1.700 ms/op
+                 transform·p1.00:   1.700 ms/op
+
+Iteration  14: 1.278 ±(99.9%) 0.030 ms/op
+                 transform·p0.00:   1.221 ms/op
+                 transform·p0.50:   1.260 ms/op
+                 transform·p0.90:   1.292 ms/op
+                 transform·p0.95:   1.313 ms/op
+                 transform·p0.99:   1.582 ms/op
+                 transform·p0.999:  7.930 ms/op
+                 transform·p0.9999: 7.930 ms/op
+                 transform·p1.00:   7.930 ms/op
+
+Iteration  15: 1.318 ±(99.9%) 0.030 ms/op
+                 transform·p0.00:   1.257 ms/op
+                 transform·p0.50:   1.300 ms/op
+                 transform·p0.90:   1.335 ms/op
+                 transform·p0.95:   1.354 ms/op
+                 transform·p0.99:   1.591 ms/op
+                 transform·p0.999:  8.159 ms/op
+                 transform·p0.9999: 8.159 ms/op
+                 transform·p1.00:   8.159 ms/op
+
+Iteration  16: 1.188 ±(99.9%) 0.158 ms/op
+                 transform·p0.00:   1.075 ms/op
+                 transform·p0.50:   1.106 ms/op
+                 transform·p0.90:   1.317 ms/op
+                 transform·p0.95:   1.339 ms/op
+                 transform·p0.99:   1.601 ms/op
+                 transform·p0.999:  41.222 ms/op
+                 transform·p0.9999: 41.222 ms/op
+                 transform·p1.00:   41.222 ms/op
+
+Iteration  17: 1.156 ±(99.9%) 0.014 ms/op
+                 transform·p0.00:   1.110 ms/op
+                 transform·p0.50:   1.145 ms/op
+                 transform·p0.90:   1.176 ms/op
+                 transform·p0.95:   1.188 ms/op
+                 transform·p0.99:   1.415 ms/op
+                 transform·p0.999:  4.383 ms/op
+                 transform·p0.9999: 4.383 ms/op
+                 transform·p1.00:   4.383 ms/op
+
+Iteration  18: 1.213 ±(99.9%) 0.019 ms/op
+                 transform·p0.00:   1.159 ms/op
+                 transform·p0.50:   1.194 ms/op
+                 transform·p0.90:   1.229 ms/op
+                 transform·p0.95:   1.259 ms/op
+                 transform·p0.99:   1.510 ms/op
+                 transform·p0.999:  5.431 ms/op
+                 transform·p0.9999: 5.431 ms/op
+                 transform·p1.00:   5.431 ms/op
+
+Iteration  19: 1.253 ±(99.9%) 0.026 ms/op
+                 transform·p0.00:   1.200 ms/op
+                 transform·p0.50:   1.233 ms/op
+                 transform·p0.90:   1.264 ms/op
+                 transform·p0.95:   1.282 ms/op
+                 transform·p0.99:   1.703 ms/op
+                 transform·p0.999:  7.053 ms/op
+                 transform·p0.9999: 7.053 ms/op
+                 transform·p1.00:   7.053 ms/op
+
+Iteration  20: 1.296 ±(99.9%) 0.011 ms/op
+                 transform·p0.00:   1.239 ms/op
+                 transform·p0.50:   1.280 ms/op
+                 transform·p0.90:   1.316 ms/op
+                 transform·p0.95:   1.350 ms/op
+                 transform·p0.99:   1.781 ms/op
+                 transform·p0.999:  2.556 ms/op
+                 transform·p0.9999: 2.556 ms/op
+                 transform·p1.00:   2.556 ms/op
+
+
+# Run progress: 90.00% complete, ETA 00:02:01
+# Fork: 8 of 10
+# Warmup Iteration   1: Aug 28, 2017 3:08:02 PM org.apache.axiom.util.stax.dialect.StAXDialectDetector detectDialect
+WARNING: Unable to determine dialect of the StAX implementation at jar:file:/home/moiz/Desktop/java-projects/ballerina-xslt-benchmark/target/benchmarks.jar!/
+Warning: org.apache.axiom.om.impl.common.serializer.push.sax.XMLReaderImpl: http://javax.xml.XMLConstants/property/accessExternalDTD
+Warning: org.apache.axiom.om.impl.common.serializer.push.sax.XMLReaderImpl: http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit
+5.488 ±(99.9%) 2.204 ms/op
+# Warmup Iteration   2: 3.143 ±(99.9%) 0.150 ms/op
+# Warmup Iteration   3: 2.238 ±(99.9%) 0.359 ms/op
+# Warmup Iteration   4: 1.687 ±(99.9%) 0.043 ms/op
+# Warmup Iteration   5: 1.695 ±(99.9%) 0.044 ms/op
+# Warmup Iteration   6: 1.600 ±(99.9%) 0.148 ms/op
+# Warmup Iteration   7: 1.523 ±(99.9%) 0.038 ms/op
+# Warmup Iteration   8: 1.448 ±(99.9%) 0.022 ms/op
+# Warmup Iteration   9: 1.460 ±(99.9%) 0.035 ms/op
+# Warmup Iteration  10: 1.494 ±(99.9%) 0.037 ms/op
+# Warmup Iteration  11: 1.345 ±(99.9%) 0.170 ms/op
+# Warmup Iteration  12: 1.299 ±(99.9%) 0.035 ms/op
+# Warmup Iteration  13: 1.310 ±(99.9%) 0.028 ms/op
+# Warmup Iteration  14: 1.467 ±(99.9%) 0.013 ms/op
+# Warmup Iteration  15: 1.723 ±(99.9%) 0.060 ms/op
+# Warmup Iteration  16: 1.522 ±(99.9%) 0.200 ms/op
+# Warmup Iteration  17: 1.207 ±(99.9%) 0.018 ms/op
+# Warmup Iteration  18: 1.242 ±(99.9%) 0.014 ms/op
+# Warmup Iteration  19: 1.283 ±(99.9%) 0.024 ms/op
+# Warmup Iteration  20: 1.312 ±(99.9%) 0.044 ms/op
+Iteration   1: 1.338 ±(99.9%) 0.034 ms/op
+                 transform·p0.00:   1.264 ms/op
+                 transform·p0.50:   1.313 ms/op
+                 transform·p0.90:   1.348 ms/op
+                 transform·p0.95:   1.380 ms/op
+                 transform·p0.99:   1.854 ms/op
+                 transform·p0.999:  8.503 ms/op
+                 transform·p0.9999: 8.503 ms/op
+                 transform·p1.00:   8.503 ms/op
+
+Iteration   2: 1.236 ±(99.9%) 0.172 ms/op
+                 transform·p0.00:   1.085 ms/op
+                 transform·p0.50:   1.118 ms/op
+                 transform·p0.90:   1.352 ms/op
+                 transform·p0.95:   1.415 ms/op
+                 transform·p0.99:   2.142 ms/op
+                 transform·p0.999:  42.926 ms/op
+                 transform·p0.9999: 42.926 ms/op
+                 transform·p1.00:   42.926 ms/op
+
+Iteration   3: 1.177 ±(99.9%) 0.021 ms/op
+                 transform·p0.00:   1.122 ms/op
+                 transform·p0.50:   1.153 ms/op
+                 transform·p0.90:   1.184 ms/op
+                 transform·p0.95:   1.201 ms/op
+                 transform·p0.99:   1.885 ms/op
+                 transform·p0.999:  5.325 ms/op
+                 transform·p0.9999: 5.325 ms/op
+                 transform·p1.00:   5.325 ms/op
+
+Iteration   4: 1.219 ±(99.9%) 0.020 ms/op
+                 transform·p0.00:   1.159 ms/op
+                 transform·p0.50:   1.200 ms/op
+                 transform·p0.90:   1.229 ms/op
+                 transform·p0.95:   1.249 ms/op
+                 transform·p0.99:   1.767 ms/op
+                 transform·p0.999:  5.612 ms/op
+                 transform·p0.9999: 5.612 ms/op
+                 transform·p1.00:   5.612 ms/op
+
+Iteration   5: 1.272 ±(99.9%) 0.029 ms/op
+                 transform·p0.00:   1.208 ms/op
+                 transform·p0.50:   1.241 ms/op
+                 transform·p0.90:   1.277 ms/op
+                 transform·p0.95:   1.316 ms/op
+                 transform·p0.99:   1.959 ms/op
+                 transform·p0.999:  7.315 ms/op
+                 transform·p0.9999: 7.315 ms/op
+                 transform·p1.00:   7.315 ms/op
+
+Iteration   6: 1.300 ±(99.9%) 0.013 ms/op
+                 transform·p0.00:   1.245 ms/op
+                 transform·p0.50:   1.282 ms/op
+                 transform·p0.90:   1.313 ms/op
+                 transform·p0.95:   1.331 ms/op
+                 transform·p0.99:   1.820 ms/op
+                 transform·p0.999:  2.535 ms/op
+                 transform·p0.9999: 2.535 ms/op
+                 transform·p1.00:   2.535 ms/op
+
+Iteration   7: 1.400 ±(99.9%) 0.182 ms/op
+                 transform·p0.00:   1.163 ms/op
+                 transform·p0.50:   1.323 ms/op
+                 transform·p0.90:   1.356 ms/op
+                 transform·p0.95:   1.376 ms/op
+                 transform·p0.99:   1.814 ms/op
+                 transform·p0.999:  39.977 ms/op
+                 transform·p0.9999: 39.977 ms/op
+                 transform·p1.00:   39.977 ms/op
+
+Iteration   8: 1.132 ±(99.9%) 0.009 ms/op
+                 transform·p0.00:   1.085 ms/op
+                 transform·p0.50:   1.116 ms/op
+                 transform·p0.90:   1.147 ms/op
+                 transform·p0.95:   1.176 ms/op
+                 transform·p0.99:   1.585 ms/op
+                 transform·p0.999:  1.972 ms/op
+                 transform·p0.9999: 1.972 ms/op
+                 transform·p1.00:   1.972 ms/op
+
+Iteration   9: 1.170 ±(99.9%) 0.012 ms/op
+                 transform·p0.00:   1.128 ms/op
+                 transform·p0.50:   1.159 ms/op
+                 transform·p0.90:   1.186 ms/op
+                 transform·p0.95:   1.202 ms/op
+                 transform·p0.99:   1.516 ms/op
+                 transform·p0.999:  3.826 ms/op
+                 transform·p0.9999: 3.826 ms/op
+                 transform·p1.00:   3.826 ms/op
+
+Iteration  10: 1.232 ±(99.9%) 0.020 ms/op
+                 transform·p0.00:   1.182 ms/op
+                 transform·p0.50:   1.212 ms/op
+                 transform·p0.90:   1.245 ms/op
+                 transform·p0.95:   1.271 ms/op
+                 transform·p0.99:   1.636 ms/op
+                 transform·p0.999:  5.751 ms/op
+                 transform·p0.9999: 5.751 ms/op
+                 transform·p1.00:   5.751 ms/op
+
+Iteration  11: 1.273 ±(99.9%) 0.026 ms/op
+                 transform·p0.00:   1.221 ms/op
+                 transform·p0.50:   1.251 ms/op
+                 transform·p0.90:   1.284 ms/op
+                 transform·p0.95:   1.310 ms/op
+                 transform·p0.99:   1.725 ms/op
+                 transform·p0.999:  7.070 ms/op
+                 transform·p0.9999: 7.070 ms/op
+                 transform·p1.00:   7.070 ms/op
+
+Iteration  12: 1.320 ±(99.9%) 0.048 ms/op
+                 transform·p0.00:   1.251 ms/op
+                 transform·p0.50:   1.288 ms/op
+                 transform·p0.90:   1.327 ms/op
+                 transform·p0.95:   1.356 ms/op
+                 transform·p0.99:   1.771 ms/op
+                 transform·p0.999:  12.091 ms/op
+                 transform·p0.9999: 12.091 ms/op
+                 transform·p1.00:   12.091 ms/op
+
+Iteration  13: 1.348 ±(99.9%) 0.009 ms/op
+                 transform·p0.00:   1.292 ms/op
+                 transform·p0.50:   1.335 ms/op
+                 transform·p0.90:   1.372 ms/op
+                 transform·p0.95:   1.390 ms/op
+                 transform·p0.99:   1.753 ms/op
+                 transform·p0.999:  1.962 ms/op
+                 transform·p0.9999: 1.962 ms/op
+                 transform·p1.00:   1.962 ms/op
+
+Iteration  14: 1.213 ±(99.9%) 0.176 ms/op
+                 transform·p0.00:   1.087 ms/op
+                 transform·p0.50:   1.114 ms/op
+                 transform·p0.90:   1.354 ms/op
+                 transform·p0.95:   1.376 ms/op
+                 transform·p0.99:   2.071 ms/op
+                 transform·p0.999:  44.696 ms/op
+                 transform·p0.9999: 44.696 ms/op
+                 transform·p1.00:   44.696 ms/op
+
+Iteration  15: 1.163 ±(99.9%) 0.012 ms/op
+                 transform·p0.00:   1.118 ms/op
+                 transform·p0.50:   1.153 ms/op
+                 transform·p0.90:   1.178 ms/op
+                 transform·p0.95:   1.198 ms/op
+                 transform·p0.99:   1.519 ms/op
+                 transform·p0.999:  3.891 ms/op
+                 transform·p0.9999: 3.891 ms/op
+                 transform·p1.00:   3.891 ms/op
+
+Iteration  16: 1.226 ±(99.9%) 0.020 ms/op
+                 transform·p0.00:   1.157 ms/op
+                 transform·p0.50:   1.204 ms/op
+                 transform·p0.90:   1.254 ms/op
+                 transform·p0.95:   1.317 ms/op
+                 transform·p0.99:   1.660 ms/op
+                 transform·p0.999:  5.513 ms/op
+                 transform·p0.9999: 5.513 ms/op
+                 transform·p1.00:   5.513 ms/op
+
+Iteration  17: 1.268 ±(99.9%) 0.027 ms/op
+                 transform·p0.00:   1.206 ms/op
+                 transform·p0.50:   1.243 ms/op
+                 transform·p0.90:   1.284 ms/op
+                 transform·p0.95:   1.313 ms/op
+                 transform·p0.99:   1.884 ms/op
+                 transform·p0.999:  7.078 ms/op
+                 transform·p0.9999: 7.078 ms/op
+                 transform·p1.00:   7.078 ms/op
+
+Iteration  18: 1.300 ±(99.9%) 0.008 ms/op
+                 transform·p0.00:   1.251 ms/op
+                 transform·p0.50:   1.286 ms/op
+                 transform·p0.90:   1.327 ms/op
+                 transform·p0.95:   1.349 ms/op
+                 transform·p0.99:   1.707 ms/op
+                 transform·p0.999:  2.150 ms/op
+                 transform·p0.9999: 2.150 ms/op
+                 transform·p1.00:   2.150 ms/op
+
+Iteration  19: 1.361 ±(99.9%) 0.033 ms/op
+                 transform·p0.00:   1.300 ms/op
+                 transform·p0.50:   1.333 ms/op
+                 transform·p0.90:   1.368 ms/op
+                 transform·p0.95:   1.410 ms/op
+                 transform·p0.99:   1.892 ms/op
+                 transform·p0.999:  8.339 ms/op
+                 transform·p0.9999: 8.339 ms/op
+                 transform·p1.00:   8.339 ms/op
+
+Iteration  20: 1.340 ±(99.9%) 0.186 ms/op
+                 transform·p0.00:   1.085 ms/op
+                 transform·p0.50:   1.348 ms/op
+                 transform·p0.90:   1.401 ms/op
+                 transform·p0.95:   1.430 ms/op
+                 transform·p0.99:   1.876 ms/op
+                 transform·p0.999:  41.943 ms/op
+                 transform·p0.9999: 41.943 ms/op
+                 transform·p1.00:   41.943 ms/op
+
+
+# Run progress: 93.33% complete, ETA 00:01:21
+# Fork: 9 of 10
+# Warmup Iteration   1: Aug 28, 2017 3:08:43 PM org.apache.axiom.util.stax.dialect.StAXDialectDetector detectDialect
+WARNING: Unable to determine dialect of the StAX implementation at jar:file:/home/moiz/Desktop/java-projects/ballerina-xslt-benchmark/target/benchmarks.jar!/
+Warning: org.apache.axiom.om.impl.common.serializer.push.sax.XMLReaderImpl: http://javax.xml.XMLConstants/property/accessExternalDTD
+Warning: org.apache.axiom.om.impl.common.serializer.push.sax.XMLReaderImpl: http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit
+5.352 ±(99.9%) 2.195 ms/op
+# Warmup Iteration   2: 3.056 ±(99.9%) 0.236 ms/op
+# Warmup Iteration   3: 2.303 ±(99.9%) 0.261 ms/op
+# Warmup Iteration   4: 1.636 ±(99.9%) 0.041 ms/op
+# Warmup Iteration   5: 1.876 ±(99.9%) 0.068 ms/op
+# Warmup Iteration   6: 1.612 ±(99.9%) 0.131 ms/op
+# Warmup Iteration   7: 1.437 ±(99.9%) 0.026 ms/op
+# Warmup Iteration   8: 1.560 ±(99.9%) 0.040 ms/op
+# Warmup Iteration   9: 1.445 ±(99.9%) 0.030 ms/op
+# Warmup Iteration  10: 1.499 ±(99.9%) 0.152 ms/op
+# Warmup Iteration  11: 1.303 ±(99.9%) 0.022 ms/op
+# Warmup Iteration  12: 1.347 ±(99.9%) 0.024 ms/op
+# Warmup Iteration  13: 1.512 ±(99.9%) 0.039 ms/op
+# Warmup Iteration  14: 1.315 ±(99.9%) 0.018 ms/op
+# Warmup Iteration  15: 1.257 ±(99.9%) 0.140 ms/op
+# Warmup Iteration  16: 1.221 ±(99.9%) 0.016 ms/op
+# Warmup Iteration  17: 1.289 ±(99.9%) 0.029 ms/op
+# Warmup Iteration  18: 1.311 ±(99.9%) 0.023 ms/op
+# Warmup Iteration  19: 1.181 ±(99.9%) 0.104 ms/op
+# Warmup Iteration  20: 1.173 ±(99.9%) 0.018 ms/op
+Iteration   1: 1.214 ±(99.9%) 0.019 ms/op
+                 transform·p0.00:   1.163 ms/op
+                 transform·p0.50:   1.194 ms/op
+                 transform·p0.90:   1.226 ms/op
+                 transform·p0.95:   1.260 ms/op
+                 transform·p0.99:   1.656 ms/op
+                 transform·p0.999:  5.415 ms/op
+                 transform·p0.9999: 5.415 ms/op
+                 transform·p1.00:   5.415 ms/op
+
+Iteration   2: 1.255 ±(99.9%) 0.021 ms/op
+                 transform·p0.00:   1.198 ms/op
+                 transform·p0.50:   1.236 ms/op
+                 transform·p0.90:   1.270 ms/op
+                 transform·p0.95:   1.290 ms/op
+                 transform·p0.99:   1.705 ms/op
+                 transform·p0.999:  5.882 ms/op
+                 transform·p0.9999: 5.882 ms/op
+                 transform·p1.00:   5.882 ms/op
+
+Iteration   3: 1.276 ±(99.9%) 0.137 ms/op
+                 transform·p0.00:   1.079 ms/op
+                 transform·p0.50:   1.266 ms/op
+                 transform·p0.90:   1.303 ms/op
+                 transform·p0.95:   1.335 ms/op
+                 transform·p0.99:   1.856 ms/op
+                 transform·p0.999:  33.456 ms/op
+                 transform·p0.9999: 33.456 ms/op
+                 transform·p1.00:   33.456 ms/op
+
+Iteration   4: 1.152 ±(99.9%) 0.029 ms/op
+                 transform·p0.00:   1.094 ms/op
+                 transform·p0.50:   1.126 ms/op
+                 transform·p0.90:   1.157 ms/op
+                 transform·p0.95:   1.215 ms/op
+                 transform·p0.99:   1.565 ms/op
+                 transform·p0.999:  8.069 ms/op
+                 transform·p0.9999: 8.069 ms/op
+                 transform·p1.00:   8.069 ms/op
+
+Iteration   5: 1.185 ±(99.9%) 0.010 ms/op
+                 transform·p0.00:   1.137 ms/op
+                 transform·p0.50:   1.174 ms/op
+                 transform·p0.90:   1.202 ms/op
+                 transform·p0.95:   1.225 ms/op
+                 transform·p0.99:   1.602 ms/op
+                 transform·p0.999:  2.400 ms/op
+                 transform·p0.9999: 2.400 ms/op
+                 transform·p1.00:   2.400 ms/op
+
+Iteration   6: 1.240 ±(99.9%) 0.027 ms/op
+                 transform·p0.00:   1.184 ms/op
+                 transform·p0.50:   1.214 ms/op
+                 transform·p0.90:   1.249 ms/op
+                 transform·p0.95:   1.360 ms/op
+                 transform·p0.99:   1.676 ms/op
+                 transform·p0.999:  7.315 ms/op
+                 transform·p0.9999: 7.315 ms/op
+                 transform·p1.00:   7.315 ms/op
+
+Iteration   7: 1.282 ±(99.9%) 0.023 ms/op
+                 transform·p0.00:   1.227 ms/op
+                 transform·p0.50:   1.264 ms/op
+                 transform·p0.90:   1.296 ms/op
+                 transform·p0.95:   1.315 ms/op
+                 transform·p0.99:   1.752 ms/op
+                 transform·p0.999:  6.275 ms/op
+                 transform·p0.9999: 6.275 ms/op
+                 transform·p1.00:   6.275 ms/op
+
+Iteration   8: 1.368 ±(99.9%) 0.156 ms/op
+                 transform·p0.00:   1.139 ms/op
+                 transform·p0.50:   1.298 ms/op
+                 transform·p0.90:   1.333 ms/op
+                 transform·p0.95:   1.358 ms/op
+                 transform·p0.99:   2.183 ms/op
+                 transform·p0.999:  35.389 ms/op
+                 transform·p0.9999: 35.389 ms/op
+                 transform·p1.00:   35.389 ms/op
+
+Iteration   9: 1.121 ±(99.9%) 0.007 ms/op
+                 transform·p0.00:   1.071 ms/op
+                 transform·p0.50:   1.110 ms/op
+                 transform·p0.90:   1.139 ms/op
+                 transform·p0.95:   1.167 ms/op
+                 transform·p0.99:   1.436 ms/op
+                 transform·p0.999:  1.923 ms/op
+                 transform·p0.9999: 1.923 ms/op
+                 transform·p1.00:   1.923 ms/op
+
+Iteration  10: 1.176 ±(99.9%) 0.014 ms/op
+                 transform·p0.00:   1.120 ms/op
+                 transform·p0.50:   1.159 ms/op
+                 transform·p0.90:   1.190 ms/op
+                 transform·p0.95:   1.211 ms/op
+                 transform·p0.99:   1.736 ms/op
+                 transform·p0.999:  3.666 ms/op
+                 transform·p0.9999: 3.666 ms/op
+                 transform·p1.00:   3.666 ms/op
+
+Iteration  11: 1.230 ±(99.9%) 0.022 ms/op
+                 transform·p0.00:   1.167 ms/op
+                 transform·p0.50:   1.204 ms/op
+                 transform·p0.90:   1.239 ms/op
+                 transform·p0.95:   1.276 ms/op
+                 transform·p0.99:   1.835 ms/op
+                 transform·p0.999:  5.890 ms/op
+                 transform·p0.9999: 5.890 ms/op
+                 transform·p1.00:   5.890 ms/op
+
+Iteration  12: 1.260 ±(99.9%) 0.025 ms/op
+                 transform·p0.00:   1.208 ms/op
+                 transform·p0.50:   1.241 ms/op
+                 transform·p0.90:   1.274 ms/op
+                 transform·p0.95:   1.303 ms/op
+                 transform·p0.99:   1.565 ms/op
+                 transform·p0.999:  7.078 ms/op
+                 transform·p0.9999: 7.078 ms/op
+                 transform·p1.00:   7.078 ms/op
+
+Iteration  13: 1.310 ±(99.9%) 0.033 ms/op
+                 transform·p0.00:   1.253 ms/op
+                 transform·p0.50:   1.290 ms/op
+                 transform·p0.90:   1.325 ms/op
+                 transform·p0.95:   1.350 ms/op
+                 transform·p0.99:   1.627 ms/op
+                 transform·p0.999:  8.733 ms/op
+                 transform·p0.9999: 8.733 ms/op
+                 transform·p1.00:   8.733 ms/op
+
+Iteration  14: 1.230 ±(99.9%) 0.157 ms/op
+                 transform·p0.00:   1.075 ms/op
+                 transform·p0.50:   1.110 ms/op
+                 transform·p0.90:   1.352 ms/op
+                 transform·p0.95:   1.389 ms/op
+                 transform·p0.99:   1.727 ms/op
+                 transform·p0.999:  39.715 ms/op
+                 transform·p0.9999: 39.715 ms/op
+                 transform·p1.00:   39.715 ms/op
+
+Iteration  15: 1.154 ±(99.9%) 0.014 ms/op
+                 transform·p0.00:   1.106 ms/op
+                 transform·p0.50:   1.139 ms/op
+                 transform·p0.90:   1.169 ms/op
+                 transform·p0.95:   1.197 ms/op
+                 transform·p0.99:   1.529 ms/op
+                 transform·p0.999:  4.465 ms/op
+                 transform·p0.9999: 4.465 ms/op
+                 transform·p1.00:   4.465 ms/op
+
+Iteration  16: 1.214 ±(99.9%) 0.026 ms/op
+                 transform·p0.00:   1.149 ms/op
+                 transform·p0.50:   1.188 ms/op
+                 transform·p0.90:   1.223 ms/op
+                 transform·p0.95:   1.247 ms/op
+                 transform·p0.99:   1.912 ms/op
+                 transform·p0.999:  6.193 ms/op
+                 transform·p0.9999: 6.193 ms/op
+                 transform·p1.00:   6.193 ms/op
+
+Iteration  17: 1.256 ±(99.9%) 0.026 ms/op
+                 transform·p0.00:   1.196 ms/op
+                 transform·p0.50:   1.231 ms/op
+                 transform·p0.90:   1.257 ms/op
+                 transform·p0.95:   1.291 ms/op
+                 transform·p0.99:   1.725 ms/op
+                 transform·p0.999:  6.930 ms/op
+                 transform·p0.9999: 6.930 ms/op
+                 transform·p1.00:   6.930 ms/op
+
+Iteration  18: 1.288 ±(99.9%) 0.010 ms/op
+                 transform·p0.00:   1.239 ms/op
+                 transform·p0.50:   1.274 ms/op
+                 transform·p0.90:   1.309 ms/op
+                 transform·p0.95:   1.331 ms/op
+                 transform·p0.99:   1.758 ms/op
+                 transform·p0.999:  2.126 ms/op
+                 transform·p0.9999: 2.126 ms/op
+                 transform·p1.00:   2.126 ms/op
+
+Iteration  19: 1.395 ±(99.9%) 0.181 ms/op
+                 transform·p0.00:   1.280 ms/op
+                 transform·p0.50:   1.315 ms/op
+                 transform·p0.90:   1.350 ms/op
+                 transform·p0.95:   1.393 ms/op
+                 transform·p0.99:   1.982 ms/op
+                 transform·p0.999:  40.174 ms/op
+                 transform·p0.9999: 40.174 ms/op
+                 transform·p1.00:   40.174 ms/op
+
+Iteration  20: 1.153 ±(99.9%) 0.016 ms/op
+                 transform·p0.00:   1.079 ms/op
+                 transform·p0.50:   1.112 ms/op
+                 transform·p0.90:   1.274 ms/op
+                 transform·p0.95:   1.427 ms/op
+                 transform·p0.99:   1.762 ms/op
+                 transform·p0.999:  2.728 ms/op
+                 transform·p0.9999: 2.728 ms/op
+                 transform·p1.00:   2.728 ms/op
+
+
+# Run progress: 96.67% complete, ETA 00:00:40
+# Fork: 10 of 10
+# Warmup Iteration   1: Aug 28, 2017 3:09:23 PM org.apache.axiom.util.stax.dialect.StAXDialectDetector detectDialect
+WARNING: Unable to determine dialect of the StAX implementation at jar:file:/home/moiz/Desktop/java-projects/ballerina-xslt-benchmark/target/benchmarks.jar!/
+Warning: org.apache.axiom.om.impl.common.serializer.push.sax.XMLReaderImpl: http://javax.xml.XMLConstants/property/accessExternalDTD
+Warning: org.apache.axiom.om.impl.common.serializer.push.sax.XMLReaderImpl: http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit
+5.645 ±(99.9%) 2.600 ms/op
+# Warmup Iteration   2: 3.137 ±(99.9%) 0.127 ms/op
+# Warmup Iteration   3: 2.570 ±(99.9%) 0.359 ms/op
+# Warmup Iteration   4: 1.732 ±(99.9%) 0.064 ms/op
+# Warmup Iteration   5: 1.851 ±(99.9%) 0.066 ms/op
+# Warmup Iteration   6: 1.791 ±(99.9%) 0.062 ms/op
+# Warmup Iteration   7: 1.673 ±(99.9%) 0.212 ms/op
+# Warmup Iteration   8: 1.404 ±(99.9%) 0.025 ms/op
+# Warmup Iteration   9: 1.546 ±(99.9%) 0.054 ms/op
+# Warmup Iteration  10: 1.422 ±(99.9%) 0.019 ms/op
+# Warmup Iteration  11: 1.568 ±(99.9%) 0.173 ms/op
+# Warmup Iteration  12: 1.402 ±(99.9%) 0.020 ms/op
+# Warmup Iteration  13: 1.296 ±(99.9%) 0.022 ms/op
+# Warmup Iteration  14: 1.300 ±(99.9%) 0.024 ms/op
+# Warmup Iteration  15: 1.366 ±(99.9%) 0.035 ms/op
+# Warmup Iteration  16: 1.347 ±(99.9%) 0.155 ms/op
+# Warmup Iteration  17: 1.247 ±(99.9%) 0.020 ms/op
+# Warmup Iteration  18: 1.241 ±(99.9%) 0.024 ms/op
+# Warmup Iteration  19: 1.265 ±(99.9%) 0.014 ms/op
+# Warmup Iteration  20: 1.294 ±(99.9%) 0.028 ms/op
+Iteration   1: 1.293 ±(99.9%) 0.160 ms/op
+                 transform·p0.00:   1.085 ms/op
+                 transform·p0.50:   1.292 ms/op
+                 transform·p0.90:   1.343 ms/op
+                 transform·p0.95:   1.421 ms/op
+                 transform·p0.99:   1.942 ms/op
+                 transform·p0.999:  37.421 ms/op
+                 transform·p0.9999: 37.421 ms/op
+                 transform·p1.00:   37.421 ms/op
+
+Iteration   2: 1.164 ±(99.9%) 0.020 ms/op
+                 transform·p0.00:   1.102 ms/op
+                 transform·p0.50:   1.135 ms/op
+                 transform·p0.90:   1.178 ms/op
+                 transform·p0.95:   1.247 ms/op
+                 transform·p0.99:   1.944 ms/op
+                 transform·p0.999:  4.530 ms/op
+                 transform·p0.9999: 4.530 ms/op
+                 transform·p1.00:   4.530 ms/op
+
+Iteration   3: 1.216 ±(99.9%) 0.029 ms/op
+                 transform·p0.00:   1.139 ms/op
+                 transform·p0.50:   1.178 ms/op
+                 transform·p0.90:   1.262 ms/op
+                 transform·p0.95:   1.411 ms/op
+                 transform·p0.99:   2.024 ms/op
+                 transform·p0.999:  7.274 ms/op
+                 transform·p0.9999: 7.274 ms/op
+                 transform·p1.00:   7.274 ms/op
+
+Iteration   4: 1.360 ±(99.9%) 0.013 ms/op
+                 transform·p0.00:   1.223 ms/op
+                 transform·p0.50:   1.335 ms/op
+                 transform·p0.90:   1.534 ms/op
+                 transform·p0.95:   1.604 ms/op
+                 transform·p0.99:   1.720 ms/op
+                 transform·p0.999:  1.864 ms/op
+                 transform·p0.9999: 1.864 ms/op
+                 transform·p1.00:   1.864 ms/op
+
+Iteration   5: 1.418 ±(99.9%) 0.033 ms/op
+                 transform·p0.00:   1.264 ms/op
+                 transform·p0.50:   1.382 ms/op
+                 transform·p0.90:   1.584 ms/op
+                 transform·p0.95:   1.681 ms/op
+                 transform·p0.99:   1.759 ms/op
+                 transform·p0.999:  7.741 ms/op
+                 transform·p0.9999: 7.741 ms/op
+                 transform·p1.00:   7.741 ms/op
+
+Iteration   6: 1.487 ±(99.9%) 0.050 ms/op
+                 transform·p0.00:   1.307 ms/op
+                 transform·p0.50:   1.434 ms/op
+                 transform·p0.90:   1.686 ms/op
+                 transform·p0.95:   1.775 ms/op
+                 transform·p0.99:   2.029 ms/op
+                 transform·p0.999:  10.830 ms/op
+                 transform·p0.9999: 10.830 ms/op
+                 transform·p1.00:   10.830 ms/op
+
+Iteration   7: 1.453 ±(99.9%) 0.211 ms/op
+                 transform·p0.00:   1.098 ms/op
+                 transform·p0.50:   1.406 ms/op
+                 transform·p0.90:   1.592 ms/op
+                 transform·p0.95:   1.792 ms/op
+                 transform·p0.99:   2.093 ms/op
+                 transform·p0.999:  45.023 ms/op
+                 transform·p0.9999: 45.023 ms/op
+                 transform·p1.00:   45.023 ms/op
+
+Iteration   8: 1.253 ±(99.9%) 0.020 ms/op
+                 transform·p0.00:   1.124 ms/op
+                 transform·p0.50:   1.223 ms/op
+                 transform·p0.90:   1.393 ms/op
+                 transform·p0.95:   1.477 ms/op
+                 transform·p0.99:   1.750 ms/op
+                 transform·p0.999:  4.973 ms/op
+                 transform·p0.9999: 4.973 ms/op
+                 transform·p1.00:   4.973 ms/op
+
+Iteration   9: 1.238 ±(99.9%) 0.010 ms/op
+                 transform·p0.00:   1.149 ms/op
+                 transform·p0.50:   1.206 ms/op
+                 transform·p0.90:   1.342 ms/op
+                 transform·p0.95:   1.399 ms/op
+                 transform·p0.99:   1.562 ms/op
+                 transform·p0.999:  2.175 ms/op
+                 transform·p0.9999: 2.175 ms/op
+                 transform·p1.00:   2.175 ms/op
+
+Iteration  10: 1.235 ±(99.9%) 0.030 ms/op
+                 transform·p0.00:   1.182 ms/op
+                 transform·p0.50:   1.210 ms/op
+                 transform·p0.90:   1.255 ms/op
+                 transform·p0.95:   1.311 ms/op
+                 transform·p0.99:   1.621 ms/op
+                 transform·p0.999:  8.405 ms/op
+                 transform·p0.9999: 8.405 ms/op
+                 transform·p1.00:   8.405 ms/op
+
+Iteration  11: 1.268 ±(99.9%) 0.026 ms/op
+                 transform·p0.00:   1.217 ms/op
+                 transform·p0.50:   1.253 ms/op
+                 transform·p0.90:   1.286 ms/op
+                 transform·p0.95:   1.303 ms/op
+                 transform·p0.99:   1.566 ms/op
+                 transform·p0.999:  7.307 ms/op
+                 transform·p0.9999: 7.307 ms/op
+                 transform·p1.00:   7.307 ms/op
+
+Iteration  12: 1.321 ±(99.9%) 0.035 ms/op
+                 transform·p0.00:   1.260 ms/op
+                 transform·p0.50:   1.298 ms/op
+                 transform·p0.90:   1.343 ms/op
+                 transform·p0.95:   1.370 ms/op
+                 transform·p0.99:   1.652 ms/op
+                 transform·p0.999:  9.110 ms/op
+                 transform·p0.9999: 9.110 ms/op
+                 transform·p1.00:   9.110 ms/op
+
+Iteration  13: 1.266 ±(99.9%) 0.169 ms/op
+                 transform·p0.00:   1.081 ms/op
+                 transform·p0.50:   1.118 ms/op
+                 transform·p0.90:   1.362 ms/op
+                 transform·p0.95:   1.410 ms/op
+                 transform·p0.99:   1.853 ms/op
+                 transform·p0.999:  41.222 ms/op
+                 transform·p0.9999: 41.222 ms/op
+                 transform·p1.00:   41.222 ms/op
+
+Iteration  14: 1.160 ±(99.9%) 0.024 ms/op
+                 transform·p0.00:   1.104 ms/op
+                 transform·p0.50:   1.133 ms/op
+                 transform·p0.90:   1.176 ms/op
+                 transform·p0.95:   1.269 ms/op
+                 transform·p0.99:   1.769 ms/op
+                 transform·p0.999:  6.914 ms/op
+                 transform·p0.9999: 6.914 ms/op
+                 transform·p1.00:   6.914 ms/op
+
+Iteration  15: 1.200 ±(99.9%) 0.020 ms/op
+                 transform·p0.00:   1.143 ms/op
+                 transform·p0.50:   1.184 ms/op
+                 transform·p0.90:   1.219 ms/op
+                 transform·p0.95:   1.255 ms/op
+                 transform·p0.99:   1.529 ms/op
+                 transform·p0.999:  5.562 ms/op
+                 transform·p0.9999: 5.562 ms/op
+                 transform·p1.00:   5.562 ms/op
+
+Iteration  16: 1.237 ±(99.9%) 0.006 ms/op
+                 transform·p0.00:   1.192 ms/op
+                 transform·p0.50:   1.225 ms/op
+                 transform·p0.90:   1.262 ms/op
+                 transform·p0.95:   1.301 ms/op
+                 transform·p0.99:   1.534 ms/op
+                 transform·p0.999:  1.845 ms/op
+                 transform·p0.9999: 1.845 ms/op
+                 transform·p1.00:   1.845 ms/op
+
+Iteration  17: 1.310 ±(99.9%) 0.035 ms/op
+                 transform·p0.00:   1.231 ms/op
+                 transform·p0.50:   1.268 ms/op
+                 transform·p0.90:   1.323 ms/op
+                 transform·p0.95:   1.537 ms/op
+                 transform·p0.99:   2.034 ms/op
+                 transform·p0.999:  7.922 ms/op
+                 transform·p0.9999: 7.922 ms/op
+                 transform·p1.00:   7.922 ms/op
+
+Iteration  18: 1.331 ±(99.9%) 0.034 ms/op
+                 transform·p0.00:   1.266 ms/op
+                 transform·p0.50:   1.307 ms/op
+                 transform·p0.90:   1.346 ms/op
+                 transform·p0.95:   1.373 ms/op
+                 transform·p0.99:   1.884 ms/op
+                 transform·p0.999:  8.520 ms/op
+                 transform·p0.9999: 8.520 ms/op
+                 transform·p1.00:   8.520 ms/op
+
+Iteration  19: 1.200 ±(99.9%) 0.154 ms/op
+                 transform·p0.00:   1.083 ms/op
+                 transform·p0.50:   1.110 ms/op
+                 transform·p0.90:   1.207 ms/op
+                 transform·p0.95:   1.402 ms/op
+                 transform·p0.99:   2.060 ms/op
+                 transform·p0.999:  39.780 ms/op
+                 transform·p0.9999: 39.780 ms/op
+                 transform·p1.00:   39.780 ms/op
+
+Iteration  20: 1.173 ±(99.9%) 0.031 ms/op
+                 transform·p0.00:   1.116 ms/op
+                 transform·p0.50:   1.147 ms/op
+                 transform·p0.90:   1.180 ms/op
+                 transform·p0.95:   1.219 ms/op
+                 transform·p0.99:   1.779 ms/op
+                 transform·p0.999:  8.364 ms/op
+                 transform·p0.9999: 8.364 ms/op
+                 transform·p1.00:   8.364 ms/op
+
+
+
+Result "org.ballerina.test.SAXTransformer.transform":
+  N = 161234
+  mean =      1.239 ±(99.9%) 0.005 ms/op
+
+  Histogram, ms/op:
+    [ 0.000,  5.000) = 161085 
+    [ 5.000, 10.000) = 107 
+    [10.000, 15.000) = 6 
+    [15.000, 20.000) = 0 
+    [20.000, 25.000) = 0 
+    [25.000, 30.000) = 0 
+    [30.000, 35.000) = 4 
+    [35.000, 40.000) = 14 
+    [40.000, 45.000) = 14 
+
+  Percentiles, ms/op:
+      p(0.0000) =      1.071 ms/op
+     p(50.0000) =      1.212 ms/op
+     p(90.0000) =      1.323 ms/op
+     p(95.0000) =      1.366 ms/op
+     p(99.0000) =      1.737 ms/op
+     p(99.9000) =      4.363 ms/op
+     p(99.9900) =     40.165 ms/op
+     p(99.9990) =     48.115 ms/op
+     p(99.9999) =     49.480 ms/op
+    p(100.0000) =     49.480 ms/op
+
+
+# JMH version: 1.19
+# VM version: JDK 1.8.0_131, VM 25.131-b11
+# VM invoker: /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/java
+# VM options: <none>
+# Warmup: <none>
+# Measurement: 1 iterations, single-shot each
+# Timeout: 10 min per iteration
+# Threads: 1 thread
+# Benchmark mode: Single shot invocation time
+# Benchmark: org.ballerina.test.SAXTransformer.transform
+
+# Run progress: 100.00% complete, ETA 00:00:00
+# Fork: 1 of 10
+Iteration   1: Aug 28, 2017 3:10:04 PM org.apache.axiom.util.stax.dialect.StAXDialectDetector detectDialect
+WARNING: Unable to determine dialect of the StAX implementation at jar:file:/home/moiz/Desktop/java-projects/ballerina-xslt-benchmark/target/benchmarks.jar!/
+Warning: org.apache.axiom.om.impl.common.serializer.push.sax.XMLReaderImpl: http://javax.xml.XMLConstants/property/accessExternalDTD
+Warning: org.apache.axiom.om.impl.common.serializer.push.sax.XMLReaderImpl: http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit
+124.368 ms/op
+
+# Run progress: 100.00% complete, ETA 00:00:00
+# Fork: 2 of 10
+Iteration   1: Aug 28, 2017 3:10:04 PM org.apache.axiom.util.stax.dialect.StAXDialectDetector detectDialect
+WARNING: Unable to determine dialect of the StAX implementation at jar:file:/home/moiz/Desktop/java-projects/ballerina-xslt-benchmark/target/benchmarks.jar!/
+Warning: org.apache.axiom.om.impl.common.serializer.push.sax.XMLReaderImpl: http://javax.xml.XMLConstants/property/accessExternalDTD
+Warning: org.apache.axiom.om.impl.common.serializer.push.sax.XMLReaderImpl: http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit
+132.701 ms/op
+
+# Run progress: 100.00% complete, ETA 00:00:00
+# Fork: 3 of 10
+Iteration   1: Aug 28, 2017 3:10:05 PM org.apache.axiom.util.stax.dialect.StAXDialectDetector detectDialect
+WARNING: Unable to determine dialect of the StAX implementation at jar:file:/home/moiz/Desktop/java-projects/ballerina-xslt-benchmark/target/benchmarks.jar!/
+Warning: org.apache.axiom.om.impl.common.serializer.push.sax.XMLReaderImpl: http://javax.xml.XMLConstants/property/accessExternalDTD
+Warning: org.apache.axiom.om.impl.common.serializer.push.sax.XMLReaderImpl: http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit
+134.656 ms/op
+
+# Run progress: 100.00% complete, ETA 00:00:00
+# Fork: 4 of 10
+Iteration   1: Aug 28, 2017 3:10:06 PM org.apache.axiom.util.stax.dialect.StAXDialectDetector detectDialect
+WARNING: Unable to determine dialect of the StAX implementation at jar:file:/home/moiz/Desktop/java-projects/ballerina-xslt-benchmark/target/benchmarks.jar!/
+Warning: org.apache.axiom.om.impl.common.serializer.push.sax.XMLReaderImpl: http://javax.xml.XMLConstants/property/accessExternalDTD
+Warning: org.apache.axiom.om.impl.common.serializer.push.sax.XMLReaderImpl: http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit
+128.028 ms/op
+
+# Run progress: 100.00% complete, ETA 00:00:00
+# Fork: 5 of 10
+Iteration   1: Aug 28, 2017 3:10:06 PM org.apache.axiom.util.stax.dialect.StAXDialectDetector detectDialect
+WARNING: Unable to determine dialect of the StAX implementation at jar:file:/home/moiz/Desktop/java-projects/ballerina-xslt-benchmark/target/benchmarks.jar!/
+Warning: org.apache.axiom.om.impl.common.serializer.push.sax.XMLReaderImpl: http://javax.xml.XMLConstants/property/accessExternalDTD
+Warning: org.apache.axiom.om.impl.common.serializer.push.sax.XMLReaderImpl: http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit
+120.108 ms/op
+
+# Run progress: 100.00% complete, ETA 00:00:00
+# Fork: 6 of 10
+Iteration   1: Aug 28, 2017 3:10:07 PM org.apache.axiom.util.stax.dialect.StAXDialectDetector detectDialect
+WARNING: Unable to determine dialect of the StAX implementation at jar:file:/home/moiz/Desktop/java-projects/ballerina-xslt-benchmark/target/benchmarks.jar!/
+Warning: org.apache.axiom.om.impl.common.serializer.push.sax.XMLReaderImpl: http://javax.xml.XMLConstants/property/accessExternalDTD
+Warning: org.apache.axiom.om.impl.common.serializer.push.sax.XMLReaderImpl: http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit
+135.716 ms/op
+
+# Run progress: 100.00% complete, ETA 00:00:00
+# Fork: 7 of 10
+Iteration   1: Aug 28, 2017 3:10:07 PM org.apache.axiom.util.stax.dialect.StAXDialectDetector detectDialect
+WARNING: Unable to determine dialect of the StAX implementation at jar:file:/home/moiz/Desktop/java-projects/ballerina-xslt-benchmark/target/benchmarks.jar!/
+Warning: org.apache.axiom.om.impl.common.serializer.push.sax.XMLReaderImpl: http://javax.xml.XMLConstants/property/accessExternalDTD
+Warning: org.apache.axiom.om.impl.common.serializer.push.sax.XMLReaderImpl: http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit
+120.320 ms/op
+
+# Run progress: 100.00% complete, ETA 00:00:00
+# Fork: 8 of 10
+Iteration   1: Aug 28, 2017 3:10:08 PM org.apache.axiom.util.stax.dialect.StAXDialectDetector detectDialect
+WARNING: Unable to determine dialect of the StAX implementation at jar:file:/home/moiz/Desktop/java-projects/ballerina-xslt-benchmark/target/benchmarks.jar!/
+Warning: org.apache.axiom.om.impl.common.serializer.push.sax.XMLReaderImpl: http://javax.xml.XMLConstants/property/accessExternalDTD
+Warning: org.apache.axiom.om.impl.common.serializer.push.sax.XMLReaderImpl: http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit
+131.185 ms/op
+
+# Run progress: 100.00% complete, ETA 00:00:00
+# Fork: 9 of 10
+Iteration   1: Aug 28, 2017 3:10:08 PM org.apache.axiom.util.stax.dialect.StAXDialectDetector detectDialect
+WARNING: Unable to determine dialect of the StAX implementation at jar:file:/home/moiz/Desktop/java-projects/ballerina-xslt-benchmark/target/benchmarks.jar!/
+Warning: org.apache.axiom.om.impl.common.serializer.push.sax.XMLReaderImpl: http://javax.xml.XMLConstants/property/accessExternalDTD
+Warning: org.apache.axiom.om.impl.common.serializer.push.sax.XMLReaderImpl: http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit
+127.256 ms/op
+
+# Run progress: 100.00% complete, ETA 00:00:00
+# Fork: 10 of 10
+Iteration   1: Aug 28, 2017 3:10:09 PM org.apache.axiom.util.stax.dialect.StAXDialectDetector detectDialect
+WARNING: Unable to determine dialect of the StAX implementation at jar:file:/home/moiz/Desktop/java-projects/ballerina-xslt-benchmark/target/benchmarks.jar!/
+Warning: org.apache.axiom.om.impl.common.serializer.push.sax.XMLReaderImpl: http://javax.xml.XMLConstants/property/accessExternalDTD
+Warning: org.apache.axiom.om.impl.common.serializer.push.sax.XMLReaderImpl: http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit
+130.789 ms/op
+
+
+Result "org.ballerina.test.SAXTransformer.transform":
+  N = 10
+  mean =    128.513 ±(99.9%) 8.376 ms/op
+
+  Histogram, ms/op:
+    [120.000, 121.250) = 2 
+    [121.250, 122.500) = 0 
+    [122.500, 123.750) = 0 
+    [123.750, 125.000) = 1 
+    [125.000, 126.250) = 0 
+    [126.250, 127.500) = 1 
+    [127.500, 128.750) = 1 
+    [128.750, 130.000) = 0 
+    [130.000, 131.250) = 2 
+    [131.250, 132.500) = 0 
+    [132.500, 133.750) = 1 
+    [133.750, 135.000) = 1 
+    [135.000, 136.250) = 1 
+    [136.250, 137.500) = 0 
+    [137.500, 138.750) = 0 
+
+  Percentiles, ms/op:
+      p(0.0000) =    120.108 ms/op
+     p(50.0000) =    129.408 ms/op
+     p(90.0000) =    135.610 ms/op
+     p(95.0000) =    135.716 ms/op
+     p(99.0000) =    135.716 ms/op
+     p(99.9000) =    135.716 ms/op
+     p(99.9900) =    135.716 ms/op
+     p(99.9990) =    135.716 ms/op
+     p(99.9999) =    135.716 ms/op
+    p(100.0000) =    135.716 ms/op
+
+
+# Run complete. Total time: 00:20:21
+
+Benchmark                                     Mode     Cnt    Score   Error   Units
+SAXTransformer.transform                     thrpt     200    0.811 ± 0.010  ops/ms
+SAXTransformer.transform                      avgt     200    1.233 ± 0.014   ms/op
+SAXTransformer.transform                    sample  161234    1.239 ± 0.005   ms/op
+SAXTransformer.transform:transform·p0.00    sample            1.071           ms/op
+SAXTransformer.transform:transform·p0.50    sample            1.212           ms/op
+SAXTransformer.transform:transform·p0.90    sample            1.323           ms/op
+SAXTransformer.transform:transform·p0.95    sample            1.366           ms/op
+SAXTransformer.transform:transform·p0.99    sample            1.737           ms/op
+SAXTransformer.transform:transform·p0.999   sample            4.363           ms/op
+SAXTransformer.transform:transform·p0.9999  sample           40.165           ms/op
+SAXTransformer.transform:transform·p1.00    sample           49.480           ms/op
+SAXTransformer.transform                        ss      10  128.513 ± 8.376   ms/op
+
