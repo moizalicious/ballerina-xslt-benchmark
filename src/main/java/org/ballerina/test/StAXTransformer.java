@@ -5,7 +5,6 @@ import org.openjdk.jmh.annotations.Benchmark;
 import org.openjdk.jmh.annotations.BenchmarkMode;
 import org.openjdk.jmh.annotations.Mode;
 import org.openjdk.jmh.annotations.OutputTimeUnit;
-import org.openjdk.jmh.infra.Blackhole;
 
 import javax.xml.transform.Transformer;
 import javax.xml.transform.TransformerConfigurationException;
@@ -22,8 +21,8 @@ public class StAXTransformer {
 
     private static final Logger logger = Logger.getLogger(StAXTransformer.class.getName());
 
-//    @Benchmark @BenchmarkMode(Mode.All) @OutputTimeUnit(TimeUnit.MICROSECONDS)
-    public void transform(Sources sources, Blackhole blackhole) {
+//    @Benchmark @BenchmarkMode(Mode.All) @OutputTimeUnit(TimeUnit.MILLISECONDS)
+    public void transform(Sources sources) {
         try {
             StAXSource xmlSource = new StAXSource(sources.omXML.getXMLStreamReader());
             StAXSource xslSource = new StAXSource(sources.omXSL.getXMLStreamReader());
@@ -34,8 +33,6 @@ public class StAXTransformer {
             Transformer transformer = TransformerFactory.newInstance().newTransformer(xslSource);
             transformer.setOutputProperty("omit-xml-declaration", "yes");
             transformer.transform(xmlSource, streamResult);
-
-            blackhole.consume(streamResult);
         } catch (TransformerConfigurationException e) {
             logger.log(Level.SEVERE, "TransformerConfigurationException Occurred", e);
         } catch (TransformerException e) {
