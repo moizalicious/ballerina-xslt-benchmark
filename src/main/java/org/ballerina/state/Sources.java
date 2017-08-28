@@ -22,7 +22,7 @@ public class Sources {
     @Setup(Level.Trial)
     public void setup() {
         try {
-            String xml = new String(Files.readAllBytes(Paths.get("xml-files/small.xml")));
+            String xml = new String(Files.readAllBytes(Paths.get("xml-files/large.xml")));
             String xsl = new String(Files.readAllBytes(Paths.get("xml-files/stylesheet.xml")));
             omXML = AXIOMUtil.stringToOM(xml);
             omXSL = AXIOMUtil.stringToOM(xsl);

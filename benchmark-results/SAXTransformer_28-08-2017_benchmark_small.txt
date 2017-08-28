@@ -3425,4 +3425,3 @@ SAXTransformer.transform:transform·p0.999   sample            4.363           m
 SAXTransformer.transform:transform·p0.9999  sample           40.165           ms/op
 SAXTransformer.transform:transform·p1.00    sample           49.480           ms/op
 SAXTransformer.transform                        ss      10  128.513 ± 8.376   ms/op
-
