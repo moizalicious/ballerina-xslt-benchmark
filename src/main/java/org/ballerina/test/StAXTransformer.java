@@ -18,7 +18,7 @@ public class StAXTransformer {
 
     private static final Logger logger = Logger.getLogger(StAXTransformer.class.getName());
 
-    @Benchmark @BenchmarkMode(Mode.All) @OutputTimeUnit(TimeUnit.MILLISECONDS) @Threads(100)
+    @Benchmark @BenchmarkMode(Mode.All) @OutputTimeUnit(TimeUnit.MILLISECONDS) @Threads(1)
     public void transform(Sources sources) {
         try {
             StAXSource xmlSource = new StAXSource(sources.omXML.getXMLStreamReader());
