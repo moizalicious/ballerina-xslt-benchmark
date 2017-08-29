@@ -1,10 +1,7 @@
 package org.ballerina.test;
 
 import org.ballerina.state.Sources;
-import org.openjdk.jmh.annotations.Benchmark;
-import org.openjdk.jmh.annotations.BenchmarkMode;
-import org.openjdk.jmh.annotations.Mode;
-import org.openjdk.jmh.annotations.OutputTimeUnit;
+import org.openjdk.jmh.annotations.*;
 
 import javax.xml.transform.Transformer;
 import javax.xml.transform.TransformerConfigurationException;
@@ -21,7 +18,7 @@ public class StAXTransformer {
 
     private static final Logger logger = Logger.getLogger(StAXTransformer.class.getName());
 
-    @Benchmark @BenchmarkMode(Mode.All) @OutputTimeUnit(TimeUnit.MILLISECONDS)
+//    @Benchmark @BenchmarkMode(Mode.All) @OutputTimeUnit(TimeUnit.MILLISECONDS) @Threads(10)
     public void transform(Sources sources) {
         try {
             StAXSource xmlSource = new StAXSource(sources.omXML.getXMLStreamReader());

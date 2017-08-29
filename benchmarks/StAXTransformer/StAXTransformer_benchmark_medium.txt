@@ -3345,4 +3345,3 @@ StAXTransformer.transform:transform·p0.999   sample            6.654           
 StAXTransformer.transform:transform·p0.9999  sample           36.738            ms/op
 StAXTransformer.transform:transform·p1.00    sample           40.829            ms/op
 StAXTransformer.transform                        ss      10  168.183 ± 13.660   ms/op
-

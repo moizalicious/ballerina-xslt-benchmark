@@ -11,7 +11,7 @@ import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.logging.Logger;
 
-@State(Scope.Benchmark)
+@State(Scope.Thread)
 public class Sources {
 
     private static final Logger logger = Logger.getLogger(Sources.class.getName());
@@ -22,7 +22,7 @@ public class Sources {
     @Setup(Level.Trial)
     public void setup() {
         try {
-            String xml = new String(Files.readAllBytes(Paths.get("xml-files/large.xml")));
+            String xml = new String(Files.readAllBytes(Paths.get("xml-files/medium.xml")));
             String xsl = new String(Files.readAllBytes(Paths.get("xml-files/stylesheet.xml")));
             omXML = AXIOMUtil.stringToOM(xml);
             omXSL = AXIOMUtil.stringToOM(xsl);
