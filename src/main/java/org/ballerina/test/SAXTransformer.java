@@ -18,7 +18,7 @@ public class SAXTransformer {
 
     private static final Logger logger = Logger.getLogger(SAXTransformer.class.getName());
 
-    @Benchmark @BenchmarkMode(Mode.All) @OutputTimeUnit(TimeUnit.MILLISECONDS) @Threads(100)
+//    @Benchmark @BenchmarkMode(Mode.All) @OutputTimeUnit(TimeUnit.MILLISECONDS) @Threads(1)
     public void transform(Sources sources) {
         try {
             SAXSource xmlSource = sources.omXML.getSAXSource(true);
